@@ -1,0 +1,1675 @@
+[main  ] INFO 2023/01/07 13:48:57 evcc 0.110.1 (5300edac)
+[main  ] INFO 2023/01/07 13:48:57 using config file: /home/ubuntu/user_data/evcc/evcc_winter.yaml
+[main  ] INFO 2023/01/07 13:48:57 starting ui and api at :7070
+[db    ] INFO 2023/01/07 13:48:57 using sqlite database: /home/ubuntu/.evcc/evcc.db
+[site  ] WARN 2023/01/07 13:49:00 vehicle 'Dummy_Auto' does not support automatic detection
+[site  ] INFO 2023/01/07 13:49:00 site config:
+[site  ] INFO 2023/01/07 13:49:00   meters:      grid ✓ pv ✗ battery ✗
+[site  ] INFO 2023/01/07 13:49:00     grid:      power ✓ energy ✓ currents ✗
+[site  ] INFO 2023/01/07 13:49:00   vehicles:
+[site  ] INFO 2023/01/07 13:49:00     vehicle 1: range ✓ finish ✗ status ✓ climate ✗ wakeup ✗
+[site  ] INFO 2023/01/07 13:49:00     vehicle 2: range ✗ finish ✗ status ✗ climate ✗ wakeup ✗
+[lp-1  ] INFO 2023/01/07 13:49:00 loadpoint 1:
+[lp-1  ] INFO 2023/01/07 13:49:00   mode:        pv
+[lp-1  ] INFO 2023/01/07 13:49:00   charger:     power ✓ energy ✓ currents ✓ phases ✗ wakeup ✗
+[lp-1  ] INFO 2023/01/07 13:49:00   meters:      charge ✓
+[lp-1  ] INFO 2023/01/07 13:49:00     charge:    power ✓ energy ✓ currents ✓
+[lp-2  ] INFO 2023/01/07 13:49:00 loadpoint 2:
+[lp-2  ] INFO 2023/01/07 13:49:00   mode:        pv
+[lp-2  ] INFO 2023/01/07 13:49:00   charger:     power ✓ energy ✓ currents ✗ phases ✗ wakeup ✗
+[lp-2  ] INFO 2023/01/07 13:49:00   meters:      charge ✓
+[lp-2  ] INFO 2023/01/07 13:49:00     charge:    power ✓ energy ✓ currents ✗
+[cache ] TRACE 2023/01/07 13:49:00 siteTitle: Zuhause
+[cache ] TRACE 2023/01/07 13:49:00 gridConfigured: true
+[cache ] TRACE 2023/01/07 13:49:00 pvConfigured: false
+[cache ] TRACE 2023/01/07 13:49:00 batteryConfigured: false
+[cache ] TRACE 2023/01/07 13:49:00 bufferSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 prioritySoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 residualPower: 0
+[cache ] TRACE 2023/01/07 13:49:00 currency: EUR
+[cache ] TRACE 2023/01/07 13:49:00 savingsSince: 1669486625
+[cache ] TRACE 2023/01/07 13:49:00 vehicles: [BMW_i3 Dummy_Auto]
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/title: Versicharge Loadpoint
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/minCurrent: 7
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/maxCurrent: 32
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/phasesConfigured: <nil>
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/phasesEnabled: 3
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/phasesActive: 3
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/phaseAction: inactive
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/phaseRemaining: 0s
+[lp-1  ] INFO 2023/01/07 13:49:00 vehicle updated: unknown -> Dummy_Auto
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/minSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/targetSoc: 100
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehiclePresent: true
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleTitle: Dummy_Auto
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleIcon: moped
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleCapacity: 42
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/targetEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/phasesActive: 1
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleRange: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleTargetSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleFeatureOffline: true
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/targetSoc: 100
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/minSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleDetectionActive: false
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/title: Steckdose_Shelly
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/minCurrent: 10
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/maxCurrent: 10
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/phasesConfigured: <nil>
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/phasesEnabled: 1
+[lp-2  ] DEBUG 2023/01/07 13:49:00 phase timer inactive
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/phasesActive: 1
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/phaseAction: inactive
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/phaseRemaining: 0s
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/pvAction: inactive
+[lp-2  ] DEBUG 2023/01/07 13:49:00 pv timer inactive
+[lp-2  ] INFO 2023/01/07 13:49:00 vehicle updated: unknown -> BMW_i3
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/minSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/targetSoc: 100
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehiclePresent: true
+[lp-2  ] DEBUG 2023/01/07 13:49:00 set charge mode: pv
+[lp-2  ] DEBUG 2023/01/07 13:49:00 set target soc: 65
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleTitle: BMW_i3
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleIcon: car
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleCapacity: 42
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/targetSoc: 65
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/targetEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/phasesActive: 1
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleRange: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleTargetSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleFeatureOffline: false
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/targetSoc: 65
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/minSoc: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/vehicleDetectionActive: false
+[cache ] TRACE 2023/01/07 13:49:00 version: 0.110.1 (5300edac)
+[cache ] TRACE 2023/01/07 13:49:00 auth: {map[]}
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:00 charge power: 0W
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/chargePower: 0
+[cache ] TRACE 2023/01/07 13:49:00 gridPower: -1462
+[cache ] TRACE 2023/01/07 13:49:00 gridEnergy: 3636.6784000000002
+[cache ] TRACE 2023/01/07 13:49:00 pvPower: 1462
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargeTotalImport: 464.275
+[lp-1  ] INFO 2023/01/07 13:49:00 car disconnected
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/phasesActive: 1
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/connectedDuration: 2562047h47m16.854775807s
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/vehicleDetectionActive: false
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/planActive: false
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:49:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:49:00 tariffGrid: 0.355
+[cache ] TRACE 2023/01/07 13:49:00 tariffFeedIn: 0.08
+[cache ] TRACE 2023/01/07 13:49:00 savingsTotalCharged: 212.05649547160291
+[cache ] TRACE 2023/01/07 13:49:00 savingsGridCharged: 206.5909872716243
+[cache ] TRACE 2023/01/07 13:49:00 savingsSelfConsumptionCharged: 5.465508199978609
+[cache ] TRACE 2023/01/07 13:49:00 savingsSelfConsumptionPercent: 2.5773830638026887
+[cache ] TRACE 2023/01/07 13:49:00 savingsEffectivePrice: 0.3479121965745413
+[cache ] TRACE 2023/01/07 13:49:00 savingsAmount: 1.5030147549941157
+[cache ] TRACE 2023/01/07 13:49:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:00 charge power: 0W
+[cache ] TRACE 2023/01/07 13:49:00 lp-2/chargePower: 0
+[cache ] TRACE 2023/01/07 13:49:00 gridPower: -1452
+[cache ] TRACE 2023/01/07 13:49:00 gridEnergy: 3636.6784000000002
+[cache ] TRACE 2023/01/07 13:49:00 pvPower: 1452
+[lp-2  ] DEBUG 2023/01/07 13:49:02 vehicle odometer: 18720km
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/vehicleOdometer: 18719.889408000003
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargeTotalImport: 141.859844
+[lp-2  ] DEBUG 2023/01/07 13:49:02 charger status: B
+[lp-2  ] DEBUG 2023/01/07 13:49:02 charge start energy: 142kWh
+[lp-2  ] INFO 2023/01/07 13:49:02 car connected
+[lp-2  ] DEBUG 2023/01/07 13:49:02 pv timer elapse
+[lp-2  ] DEBUG 2023/01/07 13:49:02 pv timer inactive
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/connectedDuration: 0s
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/charging: false
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/enabled: false
+[lp-2  ] DEBUG 2023/01/07 13:49:02 vehicle status: C
+[lp-2  ] DEBUG 2023/01/07 13:49:02 vehicle soc: 60%
+[lp-2  ] DEBUG 2023/01/07 13:49:02 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargeRemainingEnergy: 2333.3333333333335
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:49:02 pv charge current: 6.31A = 0A + 6.31A (-1452W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:49:02 site power -1452W <= -1000W enable threshold
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/targetTimeActive: false
+[lp-2  ] DEBUG 2023/01/07 13:49:02 pv enable in 0s
+[lp-2  ] DEBUG 2023/01/07 13:49:02 pv enable timer elapsed
+[lp-2  ] DEBUG 2023/01/07 13:49:02 max charge current: 10A
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/pvAction: enable
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargeCurrent: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:02 charger enable
+[lp-2  ] DEBUG 2023/01/07 13:49:02 wake-up timer: start
+[cache ] TRACE 2023/01/07 13:49:02 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:49:02 homePower: 0
+[cache ] TRACE 2023/01/07 13:49:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:10 charge power: 38W
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/chargePower: 37.6
+[cache ] TRACE 2023/01/07 13:49:10 gridPower: -1454
+[lp-2  ] DEBUG 2023/01/07 13:49:10 vehicle odometer: 18720km
+[cache ] TRACE 2023/01/07 13:49:10 gridEnergy: 3636.6784000000002
+[cache ] TRACE 2023/01/07 13:49:10 pvPower: 1491.6
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/vehicleOdometer: 18719.889408000003
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/chargeTotalImport: 141.859859
+[lp-2  ] DEBUG 2023/01/07 13:49:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:49:10 charge start energy: 142kWh
+[lp-2  ] INFO 2023/01/07 13:49:10 start charging ->
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/connected: true
+[lp-2  ] DEBUG 2023/01/07 13:49:10 soc estimated: 60.00% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:49:10 vehicle soc: 60%
+[lp-2  ] DEBUG 2023/01/07 13:49:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/chargeRemainingDuration: 62h3m24s
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:49:10 pv charge current: 16.3A = 10A + 6.32A (-1454W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:49:10 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:49:10 pv timer inactive
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:49:10 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:49:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:49:10 savingsTotalCharged: 212.0565738571587
+[cache ] TRACE 2023/01/07 13:49:10 savingsGridCharged: 206.5909872716243
+[cache ] TRACE 2023/01/07 13:49:10 savingsSelfConsumptionCharged: 5.465586585534394
+[cache ] TRACE 2023/01/07 13:49:10 savingsSelfConsumptionPercent: 2.5774190755416115
+[cache ] TRACE 2023/01/07 13:49:10 savingsEffectivePrice: 0.3479120975422593
+[cache ] TRACE 2023/01/07 13:49:10 savingsAmount: 1.5030363110219567
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:20 charge power: 2062W
+[cache ] TRACE 2023/01/07 13:49:20 lp-2/chargePower: 2061.8
+[cache ] TRACE 2023/01/07 13:49:20 gridPower: 83
+[cache ] TRACE 2023/01/07 13:49:20 gridEnergy: 3636.6787000000004
+[cache ] TRACE 2023/01/07 13:49:20 pvPower: 1978.8000000000002
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:49:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:49:20 homePower: 0
+[cache ] TRACE 2023/01/07 13:49:20 savingsTotalCharged: 212.06242500573242
+[cache ] TRACE 2023/01/07 13:49:20 savingsGridCharged: 206.59122281596984
+[cache ] TRACE 2023/01/07 13:49:20 savingsSelfConsumptionCharged: 5.471202189762577
+[cache ] TRACE 2023/01/07 13:49:20 savingsSelfConsumptionPercent: 2.579996050509505
+[cache ] TRACE 2023/01/07 13:49:20 savingsEffectivePrice: 0.3479050108610976
+[cache ] TRACE 2023/01/07 13:49:20 savingsAmount: 1.504580602184707
+[cache ] TRACE 2023/01/07 13:49:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:30 charge power: 2320W
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/chargePower: 2320.2
+[cache ] TRACE 2023/01/07 13:49:30 gridPower: 13
+[cache ] TRACE 2023/01/07 13:49:30 gridEnergy: 3636.6788
+[cache ] TRACE 2023/01/07 13:49:30 pvPower: 2307.2
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/chargedEnergy: 10.469000000000506
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/chargeDuration: 20s
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/chargeTotalImport: 141.870328
+[lp-2  ] DEBUG 2023/01/07 13:49:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:49:30 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:49:30 soc estimated: 60.02% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:49:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/chargeRemainingDuration: 1h0m4s
+[lp-2  ] DEBUG 2023/01/07 13:49:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/chargeRemainingEnergy: 2322.864333333333
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:49:30 pv charge current: 9.94A = 10A + -0.0565A (13W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:49:30 site power 13W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:49:30 pv disable timer start: 30m0s
+[lp-2  ] DEBUG 2023/01/07 13:49:30 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:49:30 lp-2/pvRemaining: 29m59.999999019s
+[cache ] TRACE 2023/01/07 13:49:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:49:30 savingsTotalCharged: 212.06874850887192
+[cache ] TRACE 2023/01/07 13:49:30 savingsGridCharged: 206.59125824633827
+[cache ] TRACE 2023/01/07 13:49:30 savingsSelfConsumptionCharged: 5.477490262533635
+[cache ] TRACE 2023/01/07 13:49:30 savingsSelfConsumptionPercent: 2.5828842302544563
+[cache ] TRACE 2023/01/07 13:49:30 savingsEffectivePrice: 0.347897068366799
+[cache ] TRACE 2023/01/07 13:49:30 savingsAmount: 1.506309822196748
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:40 charge power: 2359W
+[cache ] TRACE 2023/01/07 13:49:40 lp-2/chargePower: 2359.2
+[cache ] TRACE 2023/01/07 13:49:40 gridPower: -5
+[cache ] TRACE 2023/01/07 13:49:40 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:49:40 pvPower: 2364.2
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:49:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:49:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:49:40 savingsTotalCharged: 212.07545876998782
+[cache ] TRACE 2023/01/07 13:49:40 savingsGridCharged: 206.59125824633827
+[cache ] TRACE 2023/01/07 13:49:40 savingsSelfConsumptionCharged: 5.484200523649549
+[cache ] TRACE 2023/01/07 13:49:40 savingsSelfConsumptionPercent: 2.585966596728001
+[cache ] TRACE 2023/01/07 13:49:40 savingsEffectivePrice: 0.34788859185899673
+[cache ] TRACE 2023/01/07 13:49:40 savingsAmount: 1.5081551440036243
+[cache ] TRACE 2023/01/07 13:49:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:49:50 charge power: 2350W
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/chargePower: 2350.5
+[cache ] TRACE 2023/01/07 13:49:50 gridPower: 1
+[cache ] TRACE 2023/01/07 13:49:50 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:49:50 pvPower: 2349.5
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/chargedEnergy: 24.46900000001051
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/chargeDuration: 40s
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/chargeTotalImport: 141.884328
+[lp-2  ] DEBUG 2023/01/07 13:49:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:49:50 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:49:50 soc estimated: 60.05% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:49:50 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/chargeRemainingDuration: 58m56s
+[lp-2  ] DEBUG 2023/01/07 13:49:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/chargeRemainingEnergy: 2308.8643333333225
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:49:50 pv charge current: 10A = 10A + -0.00435A (1W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:49:50 site power 1W >= -800W disable threshold
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/targetTimeActive: false
+[lp-2  ] DEBUG 2023/01/07 13:49:50 pv disable in 29m40s
+[lp-2  ] DEBUG 2023/01/07 13:49:50 pv disable timer remaining: 29m40s
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:49:50 lp-2/pvRemaining: 29m40.027939474s
+[cache ] TRACE 2023/01/07 13:49:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:49:50 savingsTotalCharged: 212.08181233055203
+[cache ] TRACE 2023/01/07 13:49:50 savingsGridCharged: 206.59126094940595
+[cache ] TRACE 2023/01/07 13:49:50 savingsSelfConsumptionCharged: 5.490551381146088
+[cache ] TRACE 2023/01/07 13:49:50 savingsSelfConsumptionPercent: 2.5888836580613903
+[cache ] TRACE 2023/01/07 13:49:50 savingsEffectivePrice: 0.34788056994033
+[cache ] TRACE 2023/01/07 13:49:50 savingsAmount: 1.5099016298151724
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:50:00 charge power: 2352W
+[cache ] TRACE 2023/01/07 13:50:00 lp-2/chargePower: 2352.2
+[cache ] TRACE 2023/01/07 13:50:00 gridPower: 1
+[cache ] TRACE 2023/01/07 13:50:00 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:50:00 pvPower: 2351.2
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:50:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:50:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:50:00 savingsTotalCharged: 212.08832615042806
+[cache ] TRACE 2023/01/07 13:50:00 savingsGridCharged: 206.5912637186517
+[cache ] TRACE 2023/01/07 13:50:00 savingsSelfConsumptionCharged: 5.497062431776347
+[cache ] TRACE 2023/01/07 13:50:00 savingsSelfConsumptionPercent: 2.5918741175209434
+[cache ] TRACE 2023/01/07 13:50:00 savingsEffectivePrice: 0.34787234617681617
+[cache ] TRACE 2023/01/07 13:50:00 savingsAmount: 1.5116921687384937
+[cache ] TRACE 2023/01/07 13:50:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:50:10 charge power: 2352W
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/chargePower: 2351.8
+[cache ] TRACE 2023/01/07 13:50:10 gridPower: 2
+[cache ] TRACE 2023/01/07 13:50:10 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:50:10 pvPower: 2349.8
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/chargedEnergy: 38.45300000000407
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/chargeDuration: 1m0s
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/chargeTotalImport: 141.898312
+[lp-2  ] DEBUG 2023/01/07 13:50:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:50:10 next soc poll remaining time: 59m40s
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/enabled: true
+[lp-2  ] DEBUG 2023/01/07 13:50:10 soc estimated: 60.08% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:50:10 vehicle soc: 60%
+[lp-2  ] DEBUG 2023/01/07 13:50:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/chargeRemainingDuration: 58m33s
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/chargeRemainingEnergy: 2294.8803333333285
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:50:10 pv charge current: 9.99A = 10A + -0.0087A (2W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:50:10 site power 2W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:50:10 pv disable in 29m20s
+[lp-2  ] DEBUG 2023/01/07 13:50:10 pv disable timer remaining: 29m20s
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:50:10 lp-2/pvRemaining: 29m20.043891038s
+[cache ] TRACE 2023/01/07 13:50:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:50:10 savingsTotalCharged: 212.094867585164
+[cache ] TRACE 2023/01/07 13:50:10 savingsGridCharged: 206.59126928156925
+[cache ] TRACE 2023/01/07 13:50:10 savingsSelfConsumptionCharged: 5.503598303594745
+[cache ] TRACE 2023/01/07 13:50:10 savingsSelfConsumptionPercent: 2.5948757583135977
+[cache ] TRACE 2023/01/07 13:50:10 savingsEffectivePrice: 0.34786409166463644
+[cache ] TRACE 2023/01/07 13:50:10 savingsAmount: 1.5134895334885532
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:50:20 charge power: 2339W
+[cache ] TRACE 2023/01/07 13:50:20 lp-2/chargePower: 2338.9
+[cache ] TRACE 2023/01/07 13:50:20 gridPower: 12
+[cache ] TRACE 2023/01/07 13:50:20 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:50:20 pvPower: 2326.9
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:50:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:50:20 homePower: 0
+[cache ] TRACE 2023/01/07 13:50:20 savingsTotalCharged: 212.10135248214115
+[cache ] TRACE 2023/01/07 13:50:20 savingsGridCharged: 206.59130255309165
+[cache ] TRACE 2023/01/07 13:50:20 savingsSelfConsumptionCharged: 5.510049929049499
+[cache ] TRACE 2023/01/07 13:50:20 savingsSelfConsumptionPercent: 2.5978381865874445
+[cache ] TRACE 2023/01/07 13:50:20 savingsEffectivePrice: 0.3478559449868833
+[cache ] TRACE 2023/01/07 13:50:20 savingsAmount: 1.5152637304886105
+[cache ] TRACE 2023/01/07 13:50:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:50:30 charge power: 2340W
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/chargePower: 2340.2
+[cache ] TRACE 2023/01/07 13:50:30 gridPower: -1
+[cache ] TRACE 2023/01/07 13:50:30 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:50:30 pvPower: 2341.2
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/chargedEnergy: 52.26600000000303
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/chargeDuration: 1m20s
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/chargeTotalImport: 141.912125
+[lp-2  ] DEBUG 2023/01/07 13:50:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:50:30 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:50:30 soc estimated: 60.11% (vehicle: 60.00%)
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/enabled: true
+[lp-2  ] DEBUG 2023/01/07 13:50:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:50:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/chargeRemainingDuration: 58m29s
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/chargeRemainingEnergy: 2281.0673333333298
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:50:30 pv charge current: 10A = 10A + 0.00435A (-1W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:50:30 pv timer reset
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/pvAction: inactive
+[lp-2  ] DEBUG 2023/01/07 13:50:30 pv timer inactive
+[cache ] TRACE 2023/01/07 13:50:30 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:50:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:50:30 savingsTotalCharged: 212.10783582007758
+[cache ] TRACE 2023/01/07 13:50:30 savingsGridCharged: 206.59130255309165
+[cache ] TRACE 2023/01/07 13:50:30 savingsSelfConsumptionCharged: 5.516533266985939
+[cache ] TRACE 2023/01/07 13:50:30 savingsSelfConsumptionPercent: 2.60081540394641
+[cache ] TRACE 2023/01/07 13:50:30 savingsEffectivePrice: 0.34784775763914616
+[cache ] TRACE 2023/01/07 13:50:30 savingsAmount: 1.5170466484211316
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:50:40 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:50:40 lp-2/chargePower: 2342
+[cache ] TRACE 2023/01/07 13:50:40 gridPower: 5
+[cache ] TRACE 2023/01/07 13:50:40 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:50:40 pvPower: 2337
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:50:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:50:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:50:40 savingsTotalCharged: 212.1145150990714
+[cache ] TRACE 2023/01/07 13:50:40 savingsGridCharged: 206.59131681286746
+[cache ] TRACE 2023/01/07 13:50:40 savingsSelfConsumptionCharged: 5.5231982862039475
+[cache ] TRACE 2023/01/07 13:50:40 savingsSelfConsumptionPercent: 2.6038756865008748
+[cache ] TRACE 2023/01/07 13:50:40 savingsEffectivePrice: 0.3478393418621214
+[cache ] TRACE 2023/01/07 13:50:40 savingsAmount: 1.518879528706084
+[cache ] TRACE 2023/01/07 13:50:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:50:50 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/chargePower: 2341.6
+[cache ] TRACE 2023/01/07 13:50:50 gridPower: 5
+[cache ] TRACE 2023/01/07 13:50:50 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:50:50 pvPower: 2336.6
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/chargedEnergy: 66.03200000000697
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/chargeDuration: 1m40s
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/chargeTotalImport: 141.925891
+[lp-2  ] DEBUG 2023/01/07 13:50:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:50:50 next soc poll remaining time: 59m39s
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/charging: true
+[lp-2  ] DEBUG 2023/01/07 13:50:50 soc estimated: 60.14% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:50:50 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:50:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/chargeRemainingDuration: 58m6s
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/chargeRemainingEnergy: 2267.301333333328
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:50:50 pv charge current: 9.98A = 10A + -0.0217A (5W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:50:50 site power 5W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:50:50 pv disable timer start: 30m0s
+[lp-2  ] DEBUG 2023/01/07 13:50:50 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:50:50 lp-2/pvRemaining: 29m59.999999463s
+[cache ] TRACE 2023/01/07 13:50:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:50:50 savingsTotalCharged: 212.12095352488905
+[cache ] TRACE 2023/01/07 13:50:50 savingsGridCharged: 206.5913305607873
+[cache ] TRACE 2023/01/07 13:50:50 savingsSelfConsumptionCharged: 5.529622964101759
+[cache ] TRACE 2023/01/07 13:50:50 savingsSelfConsumptionPercent: 2.606825432478053
+[cache ] TRACE 2023/01/07 13:50:50 savingsEffectivePrice: 0.34783123006068417
+[cache ] TRACE 2023/01/07 13:50:50 savingsAmount: 1.520646315127982
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:51:00 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:51:00 lp-2/chargePower: 2342.3
+[cache ] TRACE 2023/01/07 13:51:00 gridPower: 4
+[cache ] TRACE 2023/01/07 13:51:00 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:51:00 pvPower: 2338.3
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:51:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:51:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:51:00 savingsTotalCharged: 212.12736804509257
+[cache ] TRACE 2023/01/07 13:51:00 savingsGridCharged: 206.59134151501212
+[cache ] TRACE 2023/01/07 13:51:00 savingsSelfConsumptionCharged: 5.536026530080457
+[cache ] TRACE 2023/01/07 13:51:00 savingsSelfConsumptionPercent: 2.6097653410302284
+[cache ] TRACE 2023/01/07 13:51:00 savingsEffectivePrice: 0.3478231453121657
+[cache ] TRACE 2023/01/07 13:51:00 savingsAmount: 1.5224072957721242
+[cache ] TRACE 2023/01/07 13:51:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:51:10 charge power: 2340W
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/chargePower: 2340.2
+[cache ] TRACE 2023/01/07 13:51:10 gridPower: -4
+[cache ] TRACE 2023/01/07 13:51:10 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:51:10 pvPower: 2344.2
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/chargedEnergy: 79.82899999998949
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/chargeDuration: 2m0s
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/chargeTotalImport: 141.939688
+[lp-2  ] DEBUG 2023/01/07 13:51:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:51:10 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:51:10 soc estimated: 60.17% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:51:10 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:51:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/chargeRemainingDuration: 57m47s
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/chargeRemainingEnergy: 2253.504333333345
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:51:10 pv charge current: 10A = 10A + 0.0174A (-4W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:51:10 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:51:10 pv timer inactive
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:51:10 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:51:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:51:10 savingsTotalCharged: 212.1338525998368
+[cache ] TRACE 2023/01/07 13:51:10 savingsGridCharged: 206.59134151501212
+[cache ] TRACE 2023/01/07 13:51:10 savingsSelfConsumptionCharged: 5.542511084824689
+[cache ] TRACE 2023/01/07 13:51:10 savingsSelfConsumptionPercent: 2.612742387364228
+[cache ] TRACE 2023/01/07 13:51:10 savingsEffectivePrice: 0.3478149584347472
+[cache ] TRACE 2023/01/07 13:51:10 savingsAmount: 1.524190548326788
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:51:20 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:51:20 lp-2/chargePower: 2341.7
+[cache ] TRACE 2023/01/07 13:51:20 gridPower: 0
+[cache ] TRACE 2023/01/07 13:51:20 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:51:20 pvPower: 2341.7
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:51:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:51:20 homePower: 0
+[cache ] TRACE 2023/01/07 13:51:20 savingsTotalCharged: 212.14037438559177
+[cache ] TRACE 2023/01/07 13:51:20 savingsGridCharged: 206.59134151501212
+[cache ] TRACE 2023/01/07 13:51:20 savingsSelfConsumptionCharged: 5.549032870579645
+[cache ] TRACE 2023/01/07 13:51:20 savingsSelfConsumptionPercent: 2.61573634281119
+[cache ] TRACE 2023/01/07 13:51:20 savingsEffectivePrice: 0.347806725057268
+[cache ] TRACE 2023/01/07 13:51:20 savingsAmount: 1.5259840394094009
+[cache ] TRACE 2023/01/07 13:51:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:51:30 charge power: 2351W
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/chargePower: 2351.3
+[cache ] TRACE 2023/01/07 13:51:30 gridPower: -1
+[cache ] TRACE 2023/01/07 13:51:30 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:51:30 pvPower: 2352.3
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/chargedEnergy: 93.59399999999596
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/chargeDuration: 2m20s
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/chargeTotalImport: 141.953453
+[lp-2  ] DEBUG 2023/01/07 13:51:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:51:30 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:51:30 soc estimated: 60.20% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:51:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:51:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/chargeRemainingDuration: 57m9s
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/chargeRemainingEnergy: 2239.7393333333357
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:51:30 pv charge current: 10A = 10A + 0.00435A (-1W @ 1p)
+[cache ] TRACE 2023/01/07 13:51:30 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:51:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:51:30 savingsTotalCharged: 212.14690778261885
+[cache ] TRACE 2023/01/07 13:51:30 savingsGridCharged: 206.59134151501212
+[cache ] TRACE 2023/01/07 13:51:30 savingsSelfConsumptionCharged: 5.555566267606749
+[cache ] TRACE 2023/01/07 13:51:30 savingsSelfConsumptionPercent: 2.618735444072268
+[cache ] TRACE 2023/01/07 13:51:30 savingsEffectivePrice: 0.34779847752880005
+[cache ] TRACE 2023/01/07 13:51:30 savingsAmount: 1.5277807235918546
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:51:40 charge power: 2345W
+[cache ] TRACE 2023/01/07 13:51:40 lp-2/chargePower: 2345
+[cache ] TRACE 2023/01/07 13:51:40 gridPower: -6
+[cache ] TRACE 2023/01/07 13:51:40 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:51:40 pvPower: 2351
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:51:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:51:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:51:40 savingsTotalCharged: 212.15368333782598
+[cache ] TRACE 2023/01/07 13:51:40 savingsGridCharged: 206.59134151501212
+[cache ] TRACE 2023/01/07 13:51:40 savingsSelfConsumptionCharged: 5.562341822813857
+[cache ] TRACE 2023/01/07 13:51:40 savingsSelfConsumptionPercent: 2.621845510905687
+[cache ] TRACE 2023/01/07 13:51:40 savingsEffectivePrice: 0.34778992484500815
+[cache ] TRACE 2023/01/07 13:51:40 savingsAmount: 1.5296440012738093
+[cache ] TRACE 2023/01/07 13:51:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:51:50 charge power: 2343W
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/chargePower: 2343.2
+[cache ] TRACE 2023/01/07 13:51:50 gridPower: -7
+[cache ] TRACE 2023/01/07 13:51:50 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:51:50 pvPower: 2350.2
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/chargedEnergy: 107.43800000000192
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/chargeDuration: 2m40s
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/chargeTotalImport: 141.967297
+[lp-2  ] DEBUG 2023/01/07 13:51:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:51:50 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:51:50 soc estimated: 60.23% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:51:50 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:51:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/chargeRemainingDuration: 57m0s
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/chargeRemainingEnergy: 2225.89533333333
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:51:50 pv charge current: 10A = 10A + 0.0304A (-7W @ 1p)
+[cache ] TRACE 2023/01/07 13:51:50 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:51:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:51:50 savingsTotalCharged: 212.1599572039944
+[cache ] TRACE 2023/01/07 13:51:50 savingsGridCharged: 206.59134151501212
+[cache ] TRACE 2023/01/07 13:51:50 savingsSelfConsumptionCharged: 5.568615688982273
+[cache ] TRACE 2023/01/07 13:51:50 savingsSelfConsumptionPercent: 2.6247251189007272
+[cache ] TRACE 2023/01/07 13:51:50 savingsEffectivePrice: 0.34778200592302183
+[cache ] TRACE 2023/01/07 13:51:50 savingsAmount: 1.5313693144701237
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:52:00 charge power: 2352W
+[cache ] TRACE 2023/01/07 13:52:00 lp-2/chargePower: 2352.5
+[cache ] TRACE 2023/01/07 13:52:00 gridPower: 3
+[cache ] TRACE 2023/01/07 13:52:00 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:52:00 pvPower: 2349.5
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:52:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:52:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:52:00 savingsTotalCharged: 212.16665786956895
+[cache ] TRACE 2023/01/07 13:52:00 savingsGridCharged: 206.5913500599629
+[cache ] TRACE 2023/01/07 13:52:00 savingsSelfConsumptionCharged: 5.575307809606045
+[cache ] TRACE 2023/01/07 13:52:00 savingsSelfConsumptionPercent: 2.627796405707398
+[cache ] TRACE 2023/01/07 13:52:00 savingsEffectivePrice: 0.3477735598843035
+[cache ] TRACE 2023/01/07 13:52:00 savingsAmount: 1.533209647641661
+[cache ] TRACE 2023/01/07 13:52:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:52:10 charge power: 2351W
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/chargePower: 2350.6
+[cache ] TRACE 2023/01/07 13:52:10 gridPower: -1
+[cache ] TRACE 2023/01/07 13:52:10 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:52:10 pvPower: 2351.6
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/chargedEnergy: 121.45300000000248
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/chargeDuration: 3m0s
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/chargeTotalImport: 141.981312
+[lp-2  ] DEBUG 2023/01/07 13:52:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:52:10 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:52:10 soc estimated: 60.26% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:52:10 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/chargeRemainingDuration: 56m28s
+[lp-2  ] DEBUG 2023/01/07 13:52:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/chargeRemainingEnergy: 2211.880333333332
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:52:10 pv charge current: 10A = 10A + 0.00435A (-1W @ 1p)
+[cache ] TRACE 2023/01/07 13:52:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:52:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:52:10 savingsTotalCharged: 212.1730406831747
+[cache ] TRACE 2023/01/07 13:52:10 savingsGridCharged: 206.5913500599629
+[cache ] TRACE 2023/01/07 13:52:10 savingsSelfConsumptionCharged: 5.581690623211787
+[cache ] TRACE 2023/01/07 13:52:10 savingsSelfConsumptionPercent: 2.6307256592257597
+[cache ] TRACE 2023/01/07 13:52:10 savingsEffectivePrice: 0.34776550443712795
+[cache ] TRACE 2023/01/07 13:52:10 savingsAmount: 1.5349649213832401
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:52:20 charge power: 2351W
+[cache ] TRACE 2023/01/07 13:52:20 lp-2/chargePower: 2350.6
+[cache ] TRACE 2023/01/07 13:52:20 gridPower: -8
+[cache ] TRACE 2023/01/07 13:52:20 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:52:20 pvPower: 2358.6
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:52:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:52:20 homePower: 0
+[cache ] TRACE 2023/01/07 13:52:20 savingsTotalCharged: 212.17957631187733
+[cache ] TRACE 2023/01/07 13:52:20 savingsGridCharged: 206.5913500599629
+[cache ] TRACE 2023/01/07 13:52:20 savingsSelfConsumptionCharged: 5.5882262519144135
+[cache ] TRACE 2023/01/07 13:52:20 savingsSelfConsumptionPercent: 2.633724861294106
+[cache ] TRACE 2023/01/07 13:52:20 savingsEffectivePrice: 0.34775725663144
+[cache ] TRACE 2023/01/07 13:52:20 savingsAmount: 1.5367622192764623
+[cache ] TRACE 2023/01/07 13:52:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:52:30 charge power: 2352W
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/chargePower: 2352.1
+[cache ] TRACE 2023/01/07 13:52:30 gridPower: 3
+[cache ] TRACE 2023/01/07 13:52:30 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:52:30 pvPower: 2349.1
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/chargedEnergy: 135.51599999999553
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/chargeDuration: 3m20s
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/chargeTotalImport: 141.995375
+[lp-2  ] DEBUG 2023/01/07 13:52:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:52:30 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:52:30 soc estimated: 60.29% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:52:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/chargeRemainingDuration: 56m4s
+[lp-2  ] DEBUG 2023/01/07 13:52:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/chargeRemainingEnergy: 2197.8173333333384
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:52:30 pv charge current: 9.99A = 10A + -0.013A (3W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:52:30 site power 3W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:52:30 pv disable timer start: 30m0s
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/targetTimeActive: false
+[lp-2  ] DEBUG 2023/01/07 13:52:30 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:52:30 lp-2/pvRemaining: 29m59.99999937s
+[cache ] TRACE 2023/01/07 13:52:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:52:30 savingsTotalCharged: 212.1860350707851
+[cache ] TRACE 2023/01/07 13:52:30 savingsGridCharged: 206.59135829782554
+[cache ] TRACE 2023/01/07 13:52:30 savingsSelfConsumptionCharged: 5.594676772959565
+[cache ] TRACE 2023/01/07 13:52:30 savingsSelfConsumptionPercent: 2.636684723899565
+[cache ] TRACE 2023/01/07 13:52:30 savingsEffectivePrice: 0.347749117009275
+[cache ] TRACE 2023/01/07 13:52:30 savingsAmount: 1.538536112563879
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:52:40 charge power: 2345W
+[cache ] TRACE 2023/01/07 13:52:40 lp-2/chargePower: 2344.8
+[cache ] TRACE 2023/01/07 13:52:40 gridPower: 0
+[cache ] TRACE 2023/01/07 13:52:40 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:52:40 pvPower: 2344.8
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:52:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:52:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:52:40 savingsTotalCharged: 212.19256750957618
+[cache ] TRACE 2023/01/07 13:52:40 savingsGridCharged: 206.59135829782554
+[cache ] TRACE 2023/01/07 13:52:40 savingsSelfConsumptionCharged: 5.601209211750654
+[cache ] TRACE 2023/01/07 13:52:40 savingsSelfConsumptionPercent: 2.63968209513176
+[cache ] TRACE 2023/01/07 13:52:40 savingsEffectivePrice: 0.34774087423838645
+[cache ] TRACE 2023/01/07 13:52:40 savingsAmount: 1.5403325332314286
+[cache ] TRACE 2023/01/07 13:52:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:52:50 charge power: 2352W
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/chargePower: 2351.5
+[cache ] TRACE 2023/01/07 13:52:50 gridPower: -3
+[cache ] TRACE 2023/01/07 13:52:50 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:52:50 pvPower: 2354.5
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/chargedEnergy: 149.56300000000056
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/chargeDuration: 3m40s
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/chargeTotalImport: 142.009422
+[lp-2  ] DEBUG 2023/01/07 13:52:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:52:50 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:52:50 soc estimated: 60.32% (vehicle: 60.00%)
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/enabled: true
+[lp-2  ] DEBUG 2023/01/07 13:52:50 vehicle soc: 60%
+[lp-2  ] DEBUG 2023/01/07 13:52:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/chargeRemainingDuration: 55m43s
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/chargeRemainingEnergy: 2183.770333333334
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:52:50 pv charge current: 10A = 10A + 0.013A (-3W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:52:50 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:52:50 pv timer inactive
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:52:50 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:52:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:52:50 savingsTotalCharged: 212.19914312590163
+[cache ] TRACE 2023/01/07 13:52:50 savingsGridCharged: 206.59135829782554
+[cache ] TRACE 2023/01/07 13:52:50 savingsSelfConsumptionCharged: 5.607784828076083
+[cache ] TRACE 2023/01/07 13:52:50 savingsSelfConsumptionPercent: 2.642699091743684
+[cache ] TRACE 2023/01/07 13:52:50 savingsEffectivePrice: 0.3477325774977037
+[cache ] TRACE 2023/01/07 13:52:50 savingsAmount: 1.5421408277209214
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:53:00 charge power: 2353W
+[cache ] TRACE 2023/01/07 13:53:00 lp-2/chargePower: 2352.8
+[cache ] TRACE 2023/01/07 13:53:00 gridPower: 2
+[cache ] TRACE 2023/01/07 13:53:00 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:53:00 pvPower: 2350.8
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:53:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:53:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:53:00 savingsTotalCharged: 212.205880636728
+[cache ] TRACE 2023/01/07 13:53:00 savingsGridCharged: 206.59136402505337
+[cache ] TRACE 2023/01/07 13:53:00 savingsSelfConsumptionCharged: 5.614516611674648
+[cache ] TRACE 2023/01/07 13:53:00 savingsSelfConsumptionPercent: 2.6457874752707977
+[cache ] TRACE 2023/01/07 13:53:00 savingsEffectivePrice: 0.3477240844430041
+[cache ] TRACE 2023/01/07 13:53:00 savingsAmount: 1.5439920682105268
+[cache ] TRACE 2023/01/07 13:53:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:53:10 charge power: 2346W
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/chargePower: 2346.1
+[cache ] TRACE 2023/01/07 13:53:10 gridPower: 1
+[cache ] TRACE 2023/01/07 13:53:10 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:53:10 pvPower: 2345.1
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/chargedEnergy: 163.61000000000558
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/chargeDuration: 4m0s
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/chargeTotalImport: 142.023469
+[lp-2  ] DEBUG 2023/01/07 13:53:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:53:10 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:53:10 soc estimated: 60.35% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:53:10 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/chargeRemainingDuration: 55m29s
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/chargeRemainingEnergy: 2169.7233333333265
+[lp-2  ] DEBUG 2023/01/07 13:53:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:53:10 pv charge current: 10A = 10A + -0.00435A (1W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:53:10 site power 1W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:53:10 pv disable timer start: 30m0s
+[lp-2  ] DEBUG 2023/01/07 13:53:10 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:53:10 lp-2/pvRemaining: 29m59.999999056s
+[cache ] TRACE 2023/01/07 13:53:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:53:10 savingsTotalCharged: 212.21217373172954
+[cache ] TRACE 2023/01/07 13:53:10 savingsGridCharged: 206.5913667074177
+[cache ] TRACE 2023/01/07 13:53:10 savingsSelfConsumptionCharged: 5.620807024311833
+[cache ] TRACE 2023/01/07 13:53:10 savingsSelfConsumptionPercent: 2.6486732242879905
+[cache ] TRACE 2023/01/07 13:53:10 savingsEffectivePrice: 0.3477161486332069
+[cache ] TRACE 2023/01/07 13:53:10 savingsAmount: 1.5457219316857527
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:53:20 charge power: 2351W
+[cache ] TRACE 2023/01/07 13:53:20 lp-2/chargePower: 2350.9
+[cache ] TRACE 2023/01/07 13:53:20 gridPower: 6
+[cache ] TRACE 2023/01/07 13:53:20 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:53:20 pvPower: 2344.9
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:53:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:53:20 homePower: 0
+[cache ] TRACE 2023/01/07 13:53:20 savingsTotalCharged: 212.21869857212246
+[cache ] TRACE 2023/01/07 13:53:20 savingsGridCharged: 206.591383360207
+[cache ] TRACE 2023/01/07 13:53:20 savingsSelfConsumptionCharged: 5.627315211915458
+[cache ] TRACE 2023/01/07 13:53:20 savingsSelfConsumptionPercent: 2.651658524803844
+[cache ] TRACE 2023/01/07 13:53:20 savingsEffectivePrice: 0.34770793905678826
+[cache ] TRACE 2023/01/07 13:53:20 savingsAmount: 1.5475116832767497
+[cache ] TRACE 2023/01/07 13:53:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:53:30 charge power: 2353W
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/chargePower: 2352.7
+[cache ] TRACE 2023/01/07 13:53:30 gridPower: -11
+[cache ] TRACE 2023/01/07 13:53:30 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:53:30 pvPower: 2363.7
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/chargedEnergy: 177.67200000000116
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/chargeDuration: 4m20s
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/chargeTotalImport: 142.037531
+[lp-2  ] DEBUG 2023/01/07 13:53:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:53:30 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:53:30 soc estimated: 60.38% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:53:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:53:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/chargeRemainingDuration: 54m58s
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/chargeRemainingEnergy: 2155.661333333332
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:53:30 pv charge current: 10A = 10A + 0.0478A (-11W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:53:30 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:53:30 pv timer inactive
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:53:30 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:53:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:53:30 savingsTotalCharged: 212.22525074486768
+[cache ] TRACE 2023/01/07 13:53:30 savingsGridCharged: 206.591383360207
+[cache ] TRACE 2023/01/07 13:53:30 savingsSelfConsumptionCharged: 5.633867384660671
+[cache ] TRACE 2023/01/07 13:53:30 savingsSelfConsumptionPercent: 2.654664025551595
+[cache ] TRACE 2023/01/07 13:53:30 savingsEffectivePrice: 0.347699673929732
+[cache ] TRACE 2023/01/07 13:53:30 savingsAmount: 1.5493135307816832
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:53:40 charge power: 2350W
+[cache ] TRACE 2023/01/07 13:53:40 lp-2/chargePower: 2350.2
+[cache ] TRACE 2023/01/07 13:53:40 gridPower: 2
+[cache ] TRACE 2023/01/07 13:53:40 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:53:40 pvPower: 2348.2
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:53:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:53:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:53:40 savingsTotalCharged: 212.23186179390586
+[cache ] TRACE 2023/01/07 13:53:40 savingsGridCharged: 206.5913889861529
+[cache ] TRACE 2023/01/07 13:53:40 savingsSelfConsumptionCharged: 5.64047280775295
+[cache ] TRACE 2023/01/07 13:53:40 savingsSelfConsumptionPercent: 2.657693694093067
+[cache ] TRACE 2023/01/07 13:53:40 savingsEffectivePrice: 0.34769134234124294
+[cache ] TRACE 2023/01/07 13:53:40 savingsAmount: 1.5511300221320599
+[cache ] TRACE 2023/01/07 13:53:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:53:50 charge power: 2350W
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/chargePower: 2350.3
+[cache ] TRACE 2023/01/07 13:53:50 gridPower: 7
+[cache ] TRACE 2023/01/07 13:53:50 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:53:50 pvPower: 2343.3
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/chargedEnergy: 191.73500000002264
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/chargeDuration: 4m40s
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/chargeTotalImport: 142.05159400000002
+[lp-2  ] DEBUG 2023/01/07 13:53:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:53:50 next soc poll remaining time: 59m40s
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/enabled: true
+[lp-2  ] DEBUG 2023/01/07 13:53:50 soc estimated: 60.41% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:53:50 vehicle soc: 60%
+[lp-2  ] DEBUG 2023/01/07 13:53:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/chargeRemainingDuration: 54m40s
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/chargeRemainingEnergy: 2141.5983333333115
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:53:50 pv charge current: 9.97A = 10A + -0.0304A (7W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:53:50 site power 7W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:53:50 pv disable timer start: 30m0s
+[lp-2  ] DEBUG 2023/01/07 13:53:50 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:53:50 lp-2/pvRemaining: 29m59.999999222s
+[cache ] TRACE 2023/01/07 13:53:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:53:50 savingsTotalCharged: 212.2382521945894
+[cache ] TRACE 2023/01/07 13:53:50 savingsGridCharged: 206.59140801895927
+[cache ] TRACE 2023/01/07 13:53:50 savingsSelfConsumptionCharged: 5.646844175630112
+[cache ] TRACE 2023/01/07 13:53:50 savingsSelfConsumptionPercent: 2.6606156605798073
+[cache ] TRACE 2023/01/07 13:53:50 savingsEffectivePrice: 0.34768330693340443
+[cache ] TRACE 2023/01/07 13:53:50 savingsAmount: 1.5528821482982793
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:54:00 charge power: 2353W
+[cache ] TRACE 2023/01/07 13:54:00 lp-2/chargePower: 2352.7
+[cache ] TRACE 2023/01/07 13:54:00 gridPower: -3
+[cache ] TRACE 2023/01/07 13:54:00 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:54:00 pvPower: 2355.7
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:54:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:54:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:54:00 savingsTotalCharged: 212.24517056931336
+[cache ] TRACE 2023/01/07 13:54:00 savingsGridCharged: 206.59140801895927
+[cache ] TRACE 2023/01/07 13:54:00 savingsSelfConsumptionCharged: 5.653762550354075
+[cache ] TRACE 2023/01/07 13:54:00 savingsSelfConsumptionPercent: 2.6637885494349627
+[cache ] TRACE 2023/01/07 13:54:00 savingsEffectivePrice: 0.3476745814890527
+[cache ] TRACE 2023/01/07 13:54:00 savingsAmount: 1.554784701347369
+[cache ] TRACE 2023/01/07 13:54:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:54:10 charge power: 2354W
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/chargePower: 2354.1
+[cache ] TRACE 2023/01/07 13:54:10 gridPower: 0
+[cache ] TRACE 2023/01/07 13:54:10 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:54:10 pvPower: 2354.1
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/chargedEnergy: 205.7969999999898
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/chargeDuration: 5m0s
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/chargeTotalImport: 142.065656
+[lp-2  ] DEBUG 2023/01/07 13:54:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:54:10 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:54:10 soc estimated: 60.44% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:54:10 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/chargeRemainingDuration: 54m14s
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/chargeRemainingEnergy: 2127.5363333333435
+[lp-2  ] DEBUG 2023/01/07 13:54:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:54:10 pv charge current: 10A = 10A + -0A (0W @ 1p)
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/targetTimeActive: false
+[lp-2  ] DEBUG 2023/01/07 13:54:10 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:54:10 pv timer inactive
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:54:10 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:54:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:54:10 savingsTotalCharged: 212.25139680365436
+[cache ] TRACE 2023/01/07 13:54:10 savingsGridCharged: 206.59140801895927
+[cache ] TRACE 2023/01/07 13:54:10 savingsSelfConsumptionCharged: 5.659988784695084
+[cache ] TRACE 2023/01/07 13:54:10 savingsSelfConsumptionPercent: 2.6666438336473814
+[cache ] TRACE 2023/01/07 13:54:10 savingsEffectivePrice: 0.34766672945746857
+[cache ] TRACE 2023/01/07 13:54:10 savingsAmount: 1.5564969157911466
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:54:20 charge power: 2354W
+[cache ] TRACE 2023/01/07 13:54:20 lp-2/chargePower: 2354
+[cache ] TRACE 2023/01/07 13:54:20 gridPower: -4
+[cache ] TRACE 2023/01/07 13:54:20 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:54:20 pvPower: 2358
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:54:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:54:20 homePower: 0
+[cache ] TRACE 2023/01/07 13:54:20 savingsTotalCharged: 212.25802220685978
+[cache ] TRACE 2023/01/07 13:54:20 savingsGridCharged: 206.59140801895927
+[cache ] TRACE 2023/01/07 13:54:20 savingsSelfConsumptionCharged: 5.666614187900518
+[cache ] TRACE 2023/01/07 13:54:20 savingsSelfConsumptionPercent: 2.6696819884517815
+[cache ] TRACE 2023/01/07 13:54:20 savingsEffectivePrice: 0.34765837453175646
+[cache ] TRACE 2023/01/07 13:54:20 savingsAmount: 1.558318901672641
+[cache ] TRACE 2023/01/07 13:54:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:54:30 charge power: 2351W
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/chargePower: 2351.1
+[cache ] TRACE 2023/01/07 13:54:30 gridPower: 6
+[cache ] TRACE 2023/01/07 13:54:30 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:54:30 pvPower: 2345.1
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/chargedEnergy: 219.86000000001127
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/chargeDuration: 5m20s
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/chargeTotalImport: 142.079719
+[lp-2  ] DEBUG 2023/01/07 13:54:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:54:30 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:54:30 soc estimated: 60.47% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:54:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/chargeRemainingDuration: 53m56s
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/chargeRemainingEnergy: 2113.473333333323
+[lp-2  ] DEBUG 2023/01/07 13:54:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:54:30 pv charge current: 9.97A = 10A + -0.0261A (6W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:54:30 site power 6W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:54:30 pv disable timer start: 30m0s
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:54:30 lp-2/pvRemaining: 29m59.999999204s
+[lp-2  ] DEBUG 2023/01/07 13:54:30 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:54:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:54:30 savingsTotalCharged: 212.26442908601422
+[cache ] TRACE 2023/01/07 13:54:30 savingsGridCharged: 206.59142436929525
+[cache ] TRACE 2023/01/07 13:54:30 savingsSelfConsumptionCharged: 5.673004716718952
+[cache ] TRACE 2023/01/07 13:54:30 savingsSelfConsumptionPercent: 2.67261205334603
+[cache ] TRACE 2023/01/07 13:54:30 savingsEffectivePrice: 0.34765031685329734
+[cache ] TRACE 2023/01/07 13:54:30 savingsAmount: 1.5600762970977105
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:54:40 charge power: 2355W
+[cache ] TRACE 2023/01/07 13:54:40 lp-2/chargePower: 2354.6
+[cache ] TRACE 2023/01/07 13:54:40 gridPower: -1
+[cache ] TRACE 2023/01/07 13:54:40 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:54:40 pvPower: 2355.6
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:54:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:54:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:54:40 savingsTotalCharged: 212.2709529429055
+[cache ] TRACE 2023/01/07 13:54:40 savingsGridCharged: 206.59142436929525
+[cache ] TRACE 2023/01/07 13:54:40 savingsSelfConsumptionCharged: 5.679528573610243
+[cache ] TRACE 2023/01/07 13:54:40 savingsSelfConsumptionPercent: 2.6756032772594494
+[cache ] TRACE 2023/01/07 13:54:40 savingsEffectivePrice: 0.34764209098753546
+[cache ] TRACE 2023/01/07 13:54:40 savingsAmount: 1.5618703577428155
+[cache ] TRACE 2023/01/07 13:54:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:54:50 charge power: 2354W
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/chargePower: 2353.9
+[cache ] TRACE 2023/01/07 13:54:50 gridPower: -5
+[cache ] TRACE 2023/01/07 13:54:50 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:54:50 pvPower: 2358.9
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/chargedEnergy: 233.8749999999834
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/chargeDuration: 5m40s
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/chargeTotalImport: 142.09373399999998
+[lp-2  ] DEBUG 2023/01/07 13:54:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:54:50 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:54:50 soc estimated: 60.50% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:54:50 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:54:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/chargeRemainingDuration: 53m31s
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/chargeRemainingEnergy: 2099.4583333333485
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:54:50 pv charge current: 10A = 10A + 0.0217A (-5W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:54:50 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:54:50 pv timer inactive
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:54:50 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:54:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:54:50 savingsTotalCharged: 212.27747178770107
+[cache ] TRACE 2023/01/07 13:54:50 savingsGridCharged: 206.59142436929525
+[cache ] TRACE 2023/01/07 13:54:50 savingsSelfConsumptionCharged: 5.68604741840581
+[cache ] TRACE 2023/01/07 13:54:50 savingsSelfConsumptionPercent: 2.678592019454816
+[cache ] TRACE 2023/01/07 13:54:50 savingsEffectivePrice: 0.34763387194649814
+[cache ] TRACE 2023/01/07 13:54:50 savingsAmount: 1.563663040061596
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:55:00 charge power: 2354W
+[cache ] TRACE 2023/01/07 13:55:00 lp-2/chargePower: 2353.7
+[cache ] TRACE 2023/01/07 13:55:00 gridPower: 1
+[cache ] TRACE 2023/01/07 13:55:00 gridEnergy: 3636.6789000000003
+[cache ] TRACE 2023/01/07 13:55:00 pvPower: 2352.7
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:55:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:55:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:55:00 savingsTotalCharged: 212.2840969357545
+[cache ] TRACE 2023/01/07 13:55:00 savingsGridCharged: 206.5914271840754
+[cache ] TRACE 2023/01/07 13:55:00 savingsSelfConsumptionCharged: 5.692669751679093
+[cache ] TRACE 2023/01/07 13:55:00 savingsSelfConsumptionPercent: 2.681627985256907
+[cache ] TRACE 2023/01/07 13:55:00 savingsEffectivePrice: 0.34762552304054245
+[cache ] TRACE 2023/01/07 13:55:00 savingsAmount: 1.5654841817117489
+[cache ] TRACE 2023/01/07 13:55:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:55:10 charge power: 2351W
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/chargePower: 2350.8
+[cache ] TRACE 2023/01/07 13:55:10 gridPower: 5
+[cache ] TRACE 2023/01/07 13:55:10 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:55:10 pvPower: 2345.8
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/chargedEnergy: 247.90699999999788
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/chargeDuration: 6m0s
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/chargeTotalImport: 142.107766
+[lp-2  ] DEBUG 2023/01/07 13:55:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:55:10 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:55:10 soc estimated: 60.53% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:55:10 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/chargeRemainingDuration: 53m14s
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/chargeRemainingEnergy: 2085.4263333333347
+[lp-2  ] DEBUG 2023/01/07 13:55:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:55:10 pv charge current: 9.98A = 10A + -0.0217A (5W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:55:10 site power 5W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:55:10 pv disable timer start: 30m0s
+[lp-2  ] DEBUG 2023/01/07 13:55:10 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:55:10 lp-2/pvRemaining: 29m59.999999481s
+[cache ] TRACE 2023/01/07 13:55:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:55:10 savingsTotalCharged: 212.29053668274844
+[cache ] TRACE 2023/01/07 13:55:10 savingsGridCharged: 206.59144088100197
+[cache ] TRACE 2023/01/07 13:55:10 savingsSelfConsumptionCharged: 5.699095801746458
+[cache ] TRACE 2023/01/07 13:55:10 savingsSelfConsumptionPercent: 2.6845736464754952
+[cache ] TRACE 2023/01/07 13:55:10 savingsEffectivePrice: 0.3476174224721913
+[cache ] TRACE 2023/01/07 13:55:10 savingsAmount: 1.5672513454802743
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:55:20 charge power: 2353W
+[cache ] TRACE 2023/01/07 13:55:20 lp-2/chargePower: 2353.2
+[cache ] TRACE 2023/01/07 13:55:20 gridPower: -5
+[cache ] TRACE 2023/01/07 13:55:20 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:55:20 pvPower: 2358.2
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:55:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:55:20 homePower: 0
+[cache ] TRACE 2023/01/07 13:55:20 savingsTotalCharged: 212.2973328106187
+[cache ] TRACE 2023/01/07 13:55:20 savingsGridCharged: 206.59144088100197
+[cache ] TRACE 2023/01/07 13:55:20 savingsSelfConsumptionCharged: 5.705891929616731
+[cache ] TRACE 2023/01/07 13:55:20 savingsSelfConsumptionPercent: 2.68768893799844
+[cache ] TRACE 2023/01/07 13:55:20 savingsEffectivePrice: 0.3476088554205032
+[cache ] TRACE 2023/01/07 13:55:20 savingsAmount: 1.5691202806445994
+[cache ] TRACE 2023/01/07 13:55:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:55:30 charge power: 2354W
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/chargePower: 2354
+[cache ] TRACE 2023/01/07 13:55:30 gridPower: 3
+[cache ] TRACE 2023/01/07 13:55:30 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:55:30 pvPower: 2351
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/chargedEnergy: 261.9690000000219
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/chargeDuration: 6m20s
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/chargeTotalImport: 142.12182800000002
+[lp-2  ] DEBUG 2023/01/07 13:55:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:55:30 next soc poll remaining time: 59m39s
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/enabled: true
+[lp-2  ] DEBUG 2023/01/07 13:55:30 soc estimated: 60.56% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:55:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/chargeRemainingDuration: 52m48s
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/chargeRemainingEnergy: 2071.3643333333102
+[lp-2  ] DEBUG 2023/01/07 13:55:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:55:30 pv charge current: 9.99A = 10A + -0.013A (3W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:55:30 site power 3W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:55:30 pv disable in 29m40s
+[lp-2  ] DEBUG 2023/01/07 13:55:30 pv disable timer remaining: 29m40s
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:55:30 lp-2/pvRemaining: 29m39.968709219s
+[cache ] TRACE 2023/01/07 13:55:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:55:30 savingsTotalCharged: 212.30363189048063
+[cache ] TRACE 2023/01/07 13:55:30 savingsGridCharged: 206.59144890871633
+[cache ] TRACE 2023/01/07 13:55:30 savingsSelfConsumptionCharged: 5.7121829817643075
+[cache ] TRACE 2023/01/07 13:55:30 savingsSelfConsumptionPercent: 2.6905724272823583
+[cache ] TRACE 2023/01/07 13:55:30 savingsEffectivePrice: 0.3476009258249724
+[cache ] TRACE 2023/01/07 13:55:30 savingsAmount: 1.5708503199851827
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:55:40 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:55:40 lp-2/chargePower: 2342.1
+[cache ] TRACE 2023/01/07 13:55:40 gridPower: -3
+[cache ] TRACE 2023/01/07 13:55:40 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:55:40 pvPower: 2345.1
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:55:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:55:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:55:40 savingsTotalCharged: 212.31039623734912
+[cache ] TRACE 2023/01/07 13:55:40 savingsGridCharged: 206.59144890871633
+[cache ] TRACE 2023/01/07 13:55:40 savingsSelfConsumptionCharged: 5.718947328632799
+[cache ] TRACE 2023/01/07 13:55:40 savingsSelfConsumptionPercent: 2.6936727687321493
+[cache ] TRACE 2023/01/07 13:55:40 savingsEffectivePrice: 0.3475923998859855
+[cache ] TRACE 2023/01/07 13:55:40 savingsAmount: 1.572710515374018
+[cache ] TRACE 2023/01/07 13:55:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:55:50 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/chargePower: 2342.2
+[cache ] TRACE 2023/01/07 13:55:50 gridPower: -38
+[cache ] TRACE 2023/01/07 13:55:50 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:55:50 pvPower: 2380.2
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/chargedEnergy: 275.7660000000044
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/chargeDuration: 6m40s
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/chargeTotalImport: 142.135625
+[lp-2  ] DEBUG 2023/01/07 13:55:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:55:50 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:55:50 soc estimated: 60.59% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:55:50 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:55:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/chargeRemainingDuration: 52m43s
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/chargeRemainingEnergy: 2057.567333333328
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:55:50 pv charge current: 10.2A = 10A + 0.165A (-38W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:55:50 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:55:50 pv timer inactive
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:55:50 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:55:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:55:50 savingsTotalCharged: 212.31669393841577
+[cache ] TRACE 2023/01/07 13:55:50 savingsGridCharged: 206.59144890871633
+[cache ] TRACE 2023/01/07 13:55:50 savingsSelfConsumptionCharged: 5.725245029699438
+[cache ] TRACE 2023/01/07 13:55:50 savingsSelfConsumptionPercent: 2.6965590521864913
+[cache ] TRACE 2023/01/07 13:55:50 savingsEffectivePrice: 0.347584462606486
+[cache ] TRACE 2023/01/07 13:55:50 savingsAmount: 1.5744423831673435
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:56:00 charge power: 2341W
+[cache ] TRACE 2023/01/07 13:56:00 lp-2/chargePower: 2341.3
+[cache ] TRACE 2023/01/07 13:56:00 gridPower: -12
+[cache ] TRACE 2023/01/07 13:56:00 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:56:00 pvPower: 2353.3
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:56:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:56:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:56:00 savingsTotalCharged: 212.32325589696987
+[cache ] TRACE 2023/01/07 13:56:00 savingsGridCharged: 206.59144890871633
+[cache ] TRACE 2023/01/07 13:56:00 savingsSelfConsumptionCharged: 5.731806988253546
+[cache ] TRACE 2023/01/07 13:56:00 savingsSelfConsumptionPercent: 2.6995662646747056
+[cache ] TRACE 2023/01/07 13:56:00 savingsEffectivePrice: 0.34757619277214347
+[cache ] TRACE 2023/01/07 13:56:00 savingsAmount: 1.5762469217697235
+[cache ] TRACE 2023/01/07 13:56:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:56:10 charge power: 2343W
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/chargePower: 2343.2
+[cache ] TRACE 2023/01/07 13:56:10 gridPower: 10
+[cache ] TRACE 2023/01/07 13:56:10 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:56:10 pvPower: 2333.2
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/chargedEnergy: 289.5159999999919
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/chargeDuration: 7m0s
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/chargeTotalImport: 142.149375
+[lp-2  ] DEBUG 2023/01/07 13:56:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:56:10 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:56:10 soc estimated: 60.62% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:56:10 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/vehicleSoc: 60
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/chargeRemainingDuration: 52m20s
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/chargeRemainingEnergy: 2043.8173333333425
+[lp-2  ] DEBUG 2023/01/07 13:56:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:56:10 pv charge current: 9.96A = 10A + -0.0435A (10W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:56:10 site power 10W >= -800W disable threshold
+[lp-2  ] DEBUG 2023/01/07 13:56:10 pv disable timer start: 30m0s
+[lp-2  ] DEBUG 2023/01/07 13:56:10 pv disable in 30m0s
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/pvAction: disable
+[cache ] TRACE 2023/01/07 13:56:10 lp-2/pvRemaining: 29m59.999999297s
+[cache ] TRACE 2023/01/07 13:56:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:56:10 savingsTotalCharged: 212.3296335817646
+[cache ] TRACE 2023/01/07 13:56:10 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:56:10 savingsSelfConsumptionCharged: 5.73815745520602
+[cache ] TRACE 2023/01/07 13:56:10 savingsSelfConsumptionPercent: 2.7024760314468077
+[cache ] TRACE 2023/01/07 13:56:10 savingsEffectivePrice: 0.34756819091352015
+[cache ] TRACE 2023/01/07 13:56:10 savingsAmount: 1.5779933001816537
+[cache ] TRACE 2023/01/07 13:56:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:56:20 charge power: 2352W
+[cache ] TRACE 2023/01/07 13:56:20 lp-2/chargePower: 2352.4
+[cache ] TRACE 2023/01/07 13:56:20 gridPower: -3
+[cache ] TRACE 2023/01/07 13:56:20 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:56:20 pvPower: 2355.4
+[cache ] TRACE 2023/01/07 13:56:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:56:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:56:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:56:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:56:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:56:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:56:21 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:56:21 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:56:21 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:56:21 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:56:21 homePower: 0
+[cache ] TRACE 2023/01/07 13:56:21 savingsTotalCharged: 212.33665204411355
+[cache ] TRACE 2023/01/07 13:56:21 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:56:21 savingsSelfConsumptionCharged: 5.745175917554984
+[cache ] TRACE 2023/01/07 13:56:21 savingsSelfConsumptionPercent: 2.7056920518655474
+[cache ] TRACE 2023/01/07 13:56:21 savingsEffectivePrice: 0.3475593468573686
+[cache ] TRACE 2023/01/07 13:56:21 savingsAmount: 1.579923377327619
+[cache ] TRACE 2023/01/07 13:56:30 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:56:30 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/chargePower: 2341.8
+[cache ] TRACE 2023/01/07 13:56:30 gridPower: -9
+[cache ] TRACE 2023/01/07 13:56:30 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:56:30 pvPower: 2350.8
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/chargedEnergy: 303.4069999999929
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/chargeDuration: 7m20s
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/chargeTotalImport: 142.163266
+[lp-2  ] DEBUG 2023/01/07 13:56:30 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:56:30 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:56:30 soc estimated: 60.65% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:56:30 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:56:30 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/chargeRemainingDuration: 52m1s
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/chargeRemainingEnergy: 2029.9263333333392
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:56:30 pv charge current: 10A = 10A + 0.0391A (-9W @ 1p)
+[lp-2  ] DEBUG 2023/01/07 13:56:30 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:56:30 pv timer inactive
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:56:30 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:56:30 homePower: 0
+[cache ] TRACE 2023/01/07 13:56:30 savingsTotalCharged: 212.34267453517327
+[cache ] TRACE 2023/01/07 13:56:30 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:56:30 savingsSelfConsumptionCharged: 5.751198408614699
+[cache ] TRACE 2023/01/07 13:56:30 savingsSelfConsumptionPercent: 2.708451525914094
+[cache ] TRACE 2023/01/07 13:56:30 savingsEffectivePrice: 0.34755175830373514
+[cache ] TRACE 2023/01/07 13:56:30 savingsAmount: 1.5815795623690407
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:56:40 charge power: 2341W
+[cache ] TRACE 2023/01/07 13:56:40 lp-2/chargePower: 2340.8
+[cache ] TRACE 2023/01/07 13:56:40 gridPower: -8
+[cache ] TRACE 2023/01/07 13:56:40 gridEnergy: 3636.679
+[cache ] TRACE 2023/01/07 13:56:40 pvPower: 2348.8
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:56:40 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:56:40 homePower: 0
+[cache ] TRACE 2023/01/07 13:56:40 savingsTotalCharged: 212.3493433436526
+[cache ] TRACE 2023/01/07 13:56:40 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:56:40 savingsSelfConsumptionCharged: 5.757867217094024
+[cache ] TRACE 2023/01/07 13:56:40 savingsSelfConsumptionPercent: 2.711506956617172
+[cache ] TRACE 2023/01/07 13:56:40 savingsEffectivePrice: 0.34754335586930163
+[cache ] TRACE 2023/01/07 13:56:40 savingsAmount: 1.583413484700855
+[cache ] TRACE 2023/01/07 13:56:50 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:56:50 charge power: 2353W
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/chargePower: 2353
+[cache ] TRACE 2023/01/07 13:56:50 gridPower: -7
+[cache ] TRACE 2023/01/07 13:56:50 gridEnergy: 3636.6792
+[cache ] TRACE 2023/01/07 13:56:50 pvPower: 2360
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/chargedEnergy: 317.28200000000584
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/chargeDuration: 7m40s
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/chargeTotalImport: 142.177141
+[lp-2  ] DEBUG 2023/01/07 13:56:50 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:56:50 next soc poll remaining time: 59m39s
+[lp-2  ] DEBUG 2023/01/07 13:56:50 soc estimated: 60.68% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:56:50 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:56:50 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/chargeRemainingDuration: 51m24s
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/chargeRemainingEnergy: 2016.0513333333263
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:56:50 pv charge current: 10A = 10A + 0.0304A (-7W @ 1p)
+[cache ] TRACE 2023/01/07 13:56:50 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:56:50 homePower: 0
+[cache ] TRACE 2023/01/07 13:56:50 savingsTotalCharged: 212.355741673065
+[cache ] TRACE 2023/01/07 13:56:50 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:56:50 savingsSelfConsumptionCharged: 5.76426554650643
+[cache ] TRACE 2023/01/07 13:56:50 savingsSelfConsumptionPercent: 2.7144382822390924
+[cache ] TRACE 2023/01/07 13:56:50 savingsEffectivePrice: 0.34753529472384137
+[cache ] TRACE 2023/01/07 13:56:50 savingsAmount: 1.5851730252892666
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:57:00 charge power: 2343W
+[cache ] TRACE 2023/01/07 13:57:00 lp-2/chargePower: 2343
+[cache ] TRACE 2023/01/07 13:57:00 gridPower: -13
+[cache ] TRACE 2023/01/07 13:57:00 gridEnergy: 3636.6792
+[cache ] TRACE 2023/01/07 13:57:00 pvPower: 2356
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:57:00 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:57:00 homePower: 0
+[cache ] TRACE 2023/01/07 13:57:00 savingsTotalCharged: 212.3622480340219
+[cache ] TRACE 2023/01/07 13:57:00 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:57:00 savingsSelfConsumptionCharged: 5.770771907463313
+[cache ] TRACE 2023/01/07 13:57:00 savingsSelfConsumptionPercent: 2.7174189202116548
+[cache ] TRACE 2023/01/07 13:57:00 savingsEffectivePrice: 0.34752709796941683
+[cache ] TRACE 2023/01/07 13:57:00 savingsAmount: 1.5869622745524095
+[cache ] TRACE 2023/01/07 13:57:10 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:57:10 charge power: 2354W
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/chargePower: 2354.1
+[cache ] TRACE 2023/01/07 13:57:10 gridPower: -7
+[cache ] TRACE 2023/01/07 13:57:10 gridEnergy: 3636.6792
+[cache ] TRACE 2023/01/07 13:57:10 pvPower: 2361.1
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/mode: pv
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/chargedEnergy: 331.1879999999974
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/chargeDuration: 8m0s
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/chargeTotalImport: 142.191047
+[lp-2  ] DEBUG 2023/01/07 13:57:10 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:57:10 next soc poll remaining time: 59m40s
+[lp-2  ] DEBUG 2023/01/07 13:57:10 soc estimated: 60.71% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:57:10 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:57:10 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/chargeRemainingDuration: 51m2s
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/chargeRemainingEnergy: 2002.1453333333366
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:57:10 pv charge current: 10A = 10A + 0.0304A (-7W @ 1p)
+[cache ] TRACE 2023/01/07 13:57:10 lp-2/targetTimeActive: false
+[cache ] TRACE 2023/01/07 13:57:10 homePower: 0
+[cache ] TRACE 2023/01/07 13:57:10 savingsTotalCharged: 212.36875717319944
+[cache ] TRACE 2023/01/07 13:57:10 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:57:10 savingsSelfConsumptionCharged: 5.777281046640878
+[cache ] TRACE 2023/01/07 13:57:10 savingsSelfConsumptionPercent: 2.7204006481655676
+[cache ] TRACE 2023/01/07 13:57:10 savingsEffectivePrice: 0.34751889821754356
+[cache ] TRACE 2023/01/07 13:57:10 savingsAmount: 1.58875228782624
+[lp-2  ] DEBUG 2023/01/07 13:57:18 set charge mode: off
+[lp-2  ] DEBUG 2023/01/07 13:57:18 pv timer elapse
+[lp-2  ] DEBUG 2023/01/07 13:57:18 pv timer inactive
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/mode: off
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:57:18 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:57:18 charge power: 2342W
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargePower: 2342.4
+[cache ] TRACE 2023/01/07 13:57:18 gridPower: -7
+[cache ] TRACE 2023/01/07 13:57:18 gridEnergy: 3636.6792
+[cache ] TRACE 2023/01/07 13:57:18 pvPower: 2349.4
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/mode: off
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargeCurrent: 10
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargedEnergy: 336.703
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargeDuration: 8m8s
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargeTotalImport: 142.196562
+[lp-2  ] DEBUG 2023/01/07 13:57:18 charger status: C
+[lp-2  ] DEBUG 2023/01/07 13:57:18 next soc poll remaining time: 59m51s
+[lp-2  ] DEBUG 2023/01/07 13:57:18 soc estimated: 60.72% (vehicle: 60.00%)
+[lp-2  ] DEBUG 2023/01/07 13:57:18 vehicle soc: 60%
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/connected: true
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/charging: true
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/enabled: true
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/vehicleSoc: 60
+[lp-2  ] DEBUG 2023/01/07 13:57:18 vehicle range: 143km
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargeRemainingDuration: 51m9s
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargeRemainingEnergy: 1996.6303333333324
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/vehicleRange: 143
+[lp-2  ] DEBUG 2023/01/07 13:57:18 charger disable
+[lp-2  ] DEBUG 2023/01/07 13:57:18 wake-up timer: stop
+[lp-2  ] DEBUG 2023/01/07 13:57:18 pv timer reset
+[lp-2  ] DEBUG 2023/01/07 13:57:18 pv timer inactive
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/pvAction: inactive
+[cache ] TRACE 2023/01/07 13:57:18 lp-2/pvRemaining: 0s
+[cache ] TRACE 2023/01/07 13:57:18 homePower: 0
+[cache ] TRACE 2023/01/07 13:57:18 savingsTotalCharged: 212.37413179438997
+[cache ] TRACE 2023/01/07 13:57:18 savingsGridCharged: 206.59147612655858
+[cache ] TRACE 2023/01/07 13:57:18 savingsSelfConsumptionCharged: 5.782655667831385
+[cache ] TRACE 2023/01/07 13:57:18 savingsSelfConsumptionPercent: 2.722862534609377
+[cache ] TRACE 2023/01/07 13:57:18 savingsEffectivePrice: 0.3475121280298231
+[cache ] TRACE 2023/01/07 13:57:18 savingsAmount: 1.5902303086536291
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/chargePower: 0
+[lp-2  ] DEBUG 2023/01/07 13:57:20 charge power: 0W
+[cache ] TRACE 2023/01/07 13:57:20 lp-2/chargePower: 0
+[cache ] TRACE 2023/01/07 13:57:20 gridPower: -15
+[cache ] TRACE 2023/01/07 13:57:20 gridEnergy: 3636.6792
+[cache ] TRACE 2023/01/07 13:57:20 pvPower: 15
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/mode: pv
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/chargeVoltages: [0 0 0]
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/chargeCurrents: [0 0 0]
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/chargeCurrent: 0
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/chargedEnergy: 0
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/chargeDuration: 0s
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/chargeTotalImport: 464.275
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/connected: false
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/charging: false
+[cache ] TRACE 2023/01/07 13:57:20 lp-1/enabled: false
+[cache ] TRACE 2023/01/07 13:57:20 homePower: 0

@@ -56,11 +56,6 @@ func NewLogger(area string) *Logger {
 		Redactor: redactor,
 	}
 
-	// capture loggers created after uiChan is initialized
-	if uiChan != nil {
-		captureLogger(logger)
-	}
-
 	loggers[area] = logger
 
 	return logger
@@ -144,27 +139,18 @@ func (w *uiWriter) Write(p []byte) (n int, err error) {
 	return 0, nil
 }
 
-// CaptureLogs appends uiWriter to relevant log levels for
-// loggers created before uiChan is initialized
+// CaptureLogs appends uiWriter to relevant log levels
 func CaptureLogs(c chan<- Param) {
-	if uiChan != nil {
-		return
-	}
-
 	uiChan = c
 
 	for _, l := range loggers {
-		captureLogger(l)
+		captureLogger("warn", l.Notepad.WARN)
+		captureLogger("error", l.Notepad.ERROR)
+		captureLogger("error", l.Notepad.FATAL)
 	}
 }
 
-func captureLogger(l *Logger) {
-	captureLogLevel("warn", l.Notepad.WARN)
-	captureLogLevel("error", l.Notepad.ERROR)
-	captureLogLevel("error", l.Notepad.FATAL)
-}
-
-func captureLogLevel(level string, l *log.Logger) {
+func captureLogger(level string, l *log.Logger) {
 	re, err := regexp.Compile(`^\[[a-zA-Z0-9-]+\s*\] \w+ .{19} `)
 	if err != nil {
 		panic(err)

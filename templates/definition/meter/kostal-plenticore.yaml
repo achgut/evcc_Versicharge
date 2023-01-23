@@ -17,8 +17,6 @@ params:
     choice: ["tcpip"]
     id: 71
     port: 1502
-  - name: capacity
-    advanced: true
 render: |
   {{- if eq .usage "pv" }}
   type: custom
@@ -44,7 +42,4 @@ render: |
   model: sunspec
   power: 802:W # sunspec model 802 battery
   soc: 802:SoC # sunspec model 802 battery
-  {{- if ne .capacity "" }}
-  capacity: {{ .capacity }} # kWh
-  {{- end }}
   {{- end }}

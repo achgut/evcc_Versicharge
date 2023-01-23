@@ -41,11 +41,11 @@ import (
 // Zaptec charger implementation
 type Zaptec struct {
 	*request.Helper
-	log         *util.Logger
-	statusCache provider.Cacheable[zaptec.StateResponse]
-	id          string
-	priority    bool
-	cache       time.Duration
+	log      *util.Logger
+	statusG  func() (zaptec.StateResponse, error)
+	id       string
+	priority bool
+	cache    time.Duration
 }
 
 func init() {
@@ -91,14 +91,7 @@ func NewZaptec(user, password, id string, priority bool, cache time.Duration) (a
 	}
 
 	// setup cached values
-	c.statusCache = provider.ResettableCached(func() (zaptec.StateResponse, error) {
-		var res zaptec.StateResponse
-
-		uri := fmt.Sprintf("%s/api/chargers/%s/state", zaptec.ApiURL, c.id)
-		err := c.GetJSON(uri, &res)
-
-		return res, err
-	}, c.cache)
+	c.reset()
 
 	data := url.Values{
 		"grant_type": {"password"},
@@ -125,6 +118,17 @@ func NewZaptec(user, password, id string, priority bool, cache time.Duration) (a
 	return c, err
 }
 
+func (c *Zaptec) reset() {
+	c.statusG = provider.Cached(func() (zaptec.StateResponse, error) {
+		var res zaptec.StateResponse
+
+		uri := fmt.Sprintf("%s/api/chargers/%s/state", zaptec.ApiURL, c.id)
+		err := c.GetJSON(uri, &res)
+
+		return res, err
+	}, c.cache)
+}
+
 func (c *Zaptec) chargers() ([]string, error) {
 	var res zaptec.ChargersResponse
 
@@ -141,7 +145,7 @@ func (c *Zaptec) chargers() ([]string, error) {
 
 // Status implements the api.Charger interface
 func (c *Zaptec) Status() (api.ChargeStatus, error) {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 	if err != nil {
 		return api.StatusA, err
 	}
@@ -163,7 +167,7 @@ func (c *Zaptec) Status() (api.ChargeStatus, error) {
 
 // Enabled implements the api.Charger interface
 func (c *Zaptec) Enabled() (bool, error) {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 	return res.ObservationByID(zaptec.IsEnabled).Bool() && !res.ObservationByID(zaptec.FinalStopActive).Bool(), err
 }
 
@@ -179,7 +183,7 @@ func (c *Zaptec) Enable(enable bool) error {
 	req, err := request.New(http.MethodPost, uri, nil, request.JSONEncoding)
 	if err == nil {
 		_, err = c.DoBody(req)
-		c.statusCache.Reset()
+		c.reset()
 	}
 
 	return err
@@ -191,7 +195,7 @@ func (c *Zaptec) chargerUpdate(data zaptec.Update) error {
 	req, err := request.New(http.MethodPost, uri, request.MarshalJSON(data), request.JSONEncoding)
 	if err == nil {
 		_, err = c.DoBody(req)
-		c.statusCache.Reset()
+		c.reset()
 	}
 
 	return err
@@ -203,7 +207,7 @@ func (c *Zaptec) sessionPriority(session string, data zaptec.SessionPriority) er
 	req, err := request.New(http.MethodPost, uri, request.MarshalJSON(data), request.JSONEncoding)
 	if err == nil {
 		_, err = c.DoBody(req)
-		c.statusCache.Reset()
+		c.reset()
 	}
 
 	return err
@@ -223,7 +227,7 @@ var _ api.Meter = (*Zaptec)(nil)
 
 // CurrentPower implements the api.Meter interface
 func (c *Zaptec) CurrentPower() (float64, error) {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 	if err != nil {
 		return 0, err
 	}
@@ -235,7 +239,7 @@ var _ api.ChargeRater = (*Zaptec)(nil)
 
 // ChargedEnergy implements the api.ChargeRater interface
 func (c *Zaptec) ChargedEnergy() (float64, error) {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 	if err != nil {
 		return 0, err
 	}
@@ -247,7 +251,7 @@ var _ api.PhaseCurrents = (*Zaptec)(nil)
 
 // Currents implements the api.PhaseCurrents interface
 func (c *Zaptec) Currents() (float64, float64, float64, error) {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 	if err != nil {
 		return 0, 0, 0, err
 	}
@@ -266,7 +270,7 @@ var _ api.PhaseSwitcher = (*Zaptec)(nil)
 
 // Phases1p3p implements the api.ChargePhases interface
 func (c *Zaptec) Phases1p3p(phases int) error {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 
 	if err == nil {
 		data := zaptec.Update{
@@ -295,7 +299,7 @@ var _ api.Diagnosis = (*Zaptec)(nil)
 
 // Diagnosis implements the api.ChargePhases interface
 func (c *Zaptec) Diagnose() {
-	res, _ := c.statusCache.Get()
+	res, _ := c.statusG()
 
 	// sort for printing
 	sort.Slice(res, func(i, j int) bool {

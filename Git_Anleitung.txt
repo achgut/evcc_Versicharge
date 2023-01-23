@@ -1,0 +1,30 @@
+EVCC:
+
+Lokales Commit der Änderungen lokale Datei:
+Source Control -> Commit mit Bemerkung
+
+GitHub Änderungen ins lokale Git schieben:
+git pull https://github.com/achgut/evcc_Versicharge.git
+
+Tags und Versionnummer aus Master EVCC 
+git pull
+
+danach lokale Änderungen nach Online schieben:
+git push https://github.com/achgut/evcc_Versicharge.git
+
+Branch auswählen
+git checkout achgut:master - Master fork
+git checkout  achgut:andere
+
+danach "Make" um neuen EVCC Programm zu erzeugen (Online Änderungen und lokale Änderungen)
+make
+
+Start:
+./evcc -c ./../../evcc_testversi.yaml
+
+In Hintergrund:
+CTRL A und dann CTRL Datei
+
+Zurückholen
+screen -r
+

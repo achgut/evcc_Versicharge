@@ -16,12 +16,11 @@ export default {
 		connected: Boolean,
 		charging: Boolean,
 		targetTime: String,
-		planProjectedStart: String,
+		targetTimeProjectedStart: String,
 		phaseAction: String,
 		phaseRemainingInterpolated: Number,
 		pvAction: String,
 		pvRemainingInterpolated: Number,
-		targetChargeDisabled: Boolean,
 	},
 	computed: {
 		phaseTimerActive() {
@@ -51,16 +50,16 @@ export default {
 			}
 
 			// target charge
-			if (this.targetTime && !this.targetChargeDisabled) {
+			if (this.targetTime) {
 				if (this.charging) {
 					return t("targetChargeActive");
 				}
 				if (this.enabled) {
 					return t("targetChargeWaitForVehicle");
 				}
-				if (this.planProjectedStart) {
+				if (this.targetTimeProjectedStart) {
 					return t("targetChargePlanned", {
-						time: this.fmtAbsoluteDate(new Date(this.planProjectedStart)),
+						time: this.fmtAbsoluteDate(new Date(this.targetTimeProjectedStart)),
 					});
 				}
 			}

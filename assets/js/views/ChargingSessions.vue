@@ -64,18 +64,11 @@
 										</tr>
 									</thead>
 									<tbody>
-										<tr
-											v-for="(session, id) in loadpoint.sessions"
-											:key="id"
-											role="button"
-											@click="showDetails(session.id)"
-										>
-											<td class="align-middle">
+										<tr v-for="(session, id) in loadpoint.sessions" :key="id">
+											<td>
 												{{ session.vehicle }}
 											</td>
-											<td
-												class="text-nowrap text-end ps-sm-4 pe-md-5 align-middle"
-											>
+											<td class="text-nowrap text-end ps-sm-4 pe-md-5">
 												{{ fmtKWh(session.chargedEnergy * 1e3) }}
 											</td>
 											<td class="text-nowrap ps-3 ps-md-4 ps-md-5">
@@ -118,34 +111,25 @@
 					</div>
 				</div>
 			</main>
-			<ChargingSessionModal
-				:session="selectedSession"
-				:vehicles="vehicles"
-				@session-changed="loadSessions"
-			/>
 		</div>
 	</div>
 </template>
 
 <script>
-import Modal from "bootstrap/js/dist/modal";
 import TopNavigation from "../components/TopNavigation.vue";
 import "@h2d2/shopicons/es/bold/arrowback";
-import "@h2d2/shopicons/es/regular/trash";
 import formatter from "../mixins/formatter";
 import api from "../api";
-import store from "../store";
-import ChargingSessionModal from "../components/ChargingSessionModal.vue";
 
 export default {
 	name: "ChargingSessions",
-	components: { TopNavigation, ChargingSessionModal },
+	components: { TopNavigation },
 	mixins: [formatter],
 	props: {
 		notifications: Array,
 	},
 	data() {
-		return { sessions: [], selectedSessionId: undefined };
+		return { sessions: [] };
 	},
 	computed: {
 		sessionsByMonthAndLoadpoint() {
@@ -166,14 +150,6 @@ export default {
 				);
 				return { month, loadpoints };
 			});
-		},
-		vehicles() {
-			return store.state.vehicles.map((v, index) => {
-				return { id: index, title: v };
-			});
-		},
-		selectedSession() {
-			return this.sessions.find((s) => s.id == this.selectedSessionId);
 		},
 	},
 	mounted() {
@@ -222,11 +198,6 @@ export default {
 			date.setMonth(month);
 			date.setFullYear(year);
 			return this.fmtMonthYear(date);
-		},
-		showDetails(sessionId) {
-			this.selectedSessionId = sessionId;
-			const modal = Modal.getOrCreateInstance(document.getElementById("sessionDetailsModal"));
-			modal.show();
 		},
 	},
 };

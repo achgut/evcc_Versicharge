@@ -92,7 +92,7 @@ export default {
 			return this.collectProps(Energyflow);
 		},
 		activeLoadpoints: function () {
-			return this.loadpoints.filter((lp) => lp.charging);
+			return this.loadpoints.filter((lp) => lp.chargePower > 0);
 		},
 		activeLoadpointsCount: function () {
 			return this.activeLoadpoints.length;

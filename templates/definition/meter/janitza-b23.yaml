@@ -4,6 +4,8 @@ products:
     description:
       generic: B23
 params:
+  - name: usage
+    choice: ["grid", "pv", "battery", "charge"]
   - name: modbus
     choice: ["rs485", "tcpip"]
 render: |

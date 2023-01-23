@@ -427,10 +427,6 @@ func (c *CmdConfigure) processParams(templateItem *templates.Template, deviceCat
 				continue
 			}
 
-			if usageFilter != "" && len(param.Usages) > 0 && !slices.Contains(param.Usages, string(usageFilter)) {
-				continue
-			}
-
 			switch param.ValueType {
 			case templates.ParamValueTypeStringList:
 				values := c.processListInputConfig(param)

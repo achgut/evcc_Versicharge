@@ -22,8 +22,8 @@ type DaheimLaden struct {
 	idTag         string
 	token         string
 	transactionID int32
-	statusCache   provider.Cacheable[daheimladen.GetLatestStatus]
-	meterCache    provider.Cacheable[daheimladen.GetLatestMeterValueResponse]
+	statusG       func() (daheimladen.GetLatestStatus, error)
+	meterG        func() (daheimladen.GetLatestMeterValueResponse, error)
 	cache         time.Duration
 }
 
@@ -67,30 +67,29 @@ func NewDaheimLaden(token, stationID string, cache time.Duration) (*DaheimLaden,
 		Base: c.Client.Transport,
 	}
 
-	c.statusCache = provider.ResettableCached(func() (daheimladen.GetLatestStatus, error) {
-		var res daheimladen.GetLatestStatus
-		err := c.GetJSON(fmt.Sprintf("%s/cs/%s/status", daheimladen.BASE_URL, c.stationID), &res)
-		return res, err
-	}, c.cache)
-
-	c.meterCache = provider.ResettableCached(func() (daheimladen.GetLatestMeterValueResponse, error) {
-		var res daheimladen.GetLatestMeterValueResponse
-		err := c.GetJSON(fmt.Sprintf("%s/cs/%s/metervalue", daheimladen.BASE_URL, c.stationID), &res)
-		return res, err
-	}, c.cache)
+	c.reset()
 
 	return c, nil
 }
 
 // reset cache
 func (c *DaheimLaden) reset() {
-	c.statusCache.Reset()
-	c.meterCache.Reset()
+	c.statusG = provider.Cached(func() (daheimladen.GetLatestStatus, error) {
+		var res daheimladen.GetLatestStatus
+		err := c.GetJSON(fmt.Sprintf("%s/cs/%s/status", daheimladen.BASE_URL, c.stationID), &res)
+		return res, err
+	}, c.cache)
+
+	c.meterG = provider.Cached(func() (daheimladen.GetLatestMeterValueResponse, error) {
+		var res daheimladen.GetLatestMeterValueResponse
+		err := c.GetJSON(fmt.Sprintf("%s/cs/%s/metervalue", daheimladen.BASE_URL, c.stationID), &res)
+		return res, err
+	}, c.cache)
 }
 
 // Status implements the api.Charger interface
 func (c *DaheimLaden) Status() (api.ChargeStatus, error) {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 	if err != nil {
 		return api.StatusNone, err
 	}
@@ -112,7 +111,7 @@ func (c *DaheimLaden) Status() (api.ChargeStatus, error) {
 
 // Enabled implements the api.Charger interface
 func (c *DaheimLaden) Enabled() (bool, error) {
-	res, err := c.statusCache.Get()
+	res, err := c.statusG()
 	return res.Status == string(daheimladen.CHARGING), err
 }
 
@@ -193,7 +192,7 @@ var _ api.Meter = (*DaheimLaden)(nil)
 
 // CurrentPower implements the api.Meter interface
 func (c *DaheimLaden) CurrentPower() (float64, error) {
-	res, err := c.meterCache.Get()
+	res, err := c.meterG()
 	return float64(res.ActivePowerImport * 1e3), err
 }
 
@@ -201,7 +200,7 @@ var _ api.MeterEnergy = (*DaheimLaden)(nil)
 
 // TotalEnergy implements the api.MeterMeterEnergy interface
 func (c *DaheimLaden) TotalEnergy() (float64, error) {
-	res, err := c.meterCache.Get()
+	res, err := c.meterG()
 	return float64(res.EnergyActiveImportRegister), err
 }
 
@@ -209,6 +208,6 @@ var _ api.PhaseCurrents = (*DaheimLaden)(nil)
 
 // Currents implements the api.PhaseCurrents interface
 func (c *DaheimLaden) Currents() (float64, float64, float64, error) {
-	res, err := c.meterCache.Get()
+	res, err := c.meterG()
 	return float64(res.CurrentImportPhaseL1), float64(res.CurrentImportPhaseL2), float64(res.CurrentImportPhaseL3), err
 }

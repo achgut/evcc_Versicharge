@@ -15,8 +15,6 @@ params:
   - name: modbus
     choice: ["rs485", "tcpip"]
     baudrate: 9600
-  - name: capacity
-    advanced: true
 render: |
   type: custom
   {{- if eq .usage "grid" }}
@@ -97,7 +95,4 @@ render: |
       type: input
       decode: int16
     scale: 0.1
-  {{- if ne .capacity "" }}
-  capacity: {{ .capacity }} # kWh
-  {{- end }}
   {{- end }}

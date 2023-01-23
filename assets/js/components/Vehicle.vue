@@ -31,6 +31,7 @@
 				align="start"
 			/>
 			<TargetCharge
+				v-if="socBasedCharging"
 				class="flex-grow-1 text-center target-charge"
 				v-bind="targetCharge"
 				:disabled="targetChargeDisabled"
@@ -99,9 +100,9 @@ export default {
 		vehicleIcon: String,
 		vehicleCapacity: Number,
 		socBasedCharging: Boolean,
-		planActive: Boolean,
-		planProjectedStart: String,
+		targetTimeActive: Boolean,
 		targetTime: String,
+		targetTimeProjectedStart: String,
 		targetSoc: Number,
 		targetEnergy: Number,
 		chargedEnergy: Number,
@@ -162,22 +163,7 @@ export default {
 			return value > 1 ? `+${Math.round(value)}%` : null;
 		},
 		targetChargeDisabled: function () {
-			if (!this.connected) {
-				return true;
-			}
-			if (["off", "now"].includes(this.mode)) {
-				return true;
-			}
-			// enabled for vehicles with Soc
-			if (this.socBasedCharging) {
-				return false;
-			}
-			// disabled of no energy target is set (offline or guest vehicles)
-			if (!this.targetEnergy) {
-				return true;
-			}
-
-			return false;
+			return !this.connected || !["pv", "minpv"].includes(this.mode);
 		},
 	},
 	watch: {

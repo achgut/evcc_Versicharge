@@ -128,7 +128,10 @@ func NewSiteFromConfig(
 		})
 	}
 
-	tariff := site.GetTariff(PlannerTariff)
+	tariff := site.tariffs.Grid
+	if site.tariffs.Planner != nil {
+		tariff = site.tariffs.Planner
+	}
 
 	// give loadpoints access to vehicles and database
 	for _, lp := range loadpoints {

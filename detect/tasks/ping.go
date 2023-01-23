@@ -5,7 +5,7 @@ import (
 	"time"
 
 	"github.com/evcc-io/evcc/util"
-	ping "github.com/prometheus-community/pro-bing"
+	"github.com/go-ping/ping"
 )
 
 const Ping TaskType = "ping"

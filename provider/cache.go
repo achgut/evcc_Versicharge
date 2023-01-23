@@ -36,6 +36,7 @@ type cached[T any] struct {
 // Cached wraps a getter with a cache
 func Cached[T any](g func() (T, error), cache time.Duration) func() (T, error) {
 	c := ResettableCached(g, cache)
+	_ = bus.Subscribe(reset, c.Reset)
 	return c.Get
 }
 
@@ -50,13 +51,11 @@ var _ Cacheable[int64] = (*cached[int64])(nil)
 // ResettableCached wraps a getter with a cache. It returns a `Cacheable`.
 // Instead of the cached getter, the `Get()` and `Reset()` methods are exposed.
 func ResettableCached[T any](g func() (T, error), cache time.Duration) *cached[T] {
-	c := &cached[T]{
+	return &cached[T]{
 		clock: clock.New(),
 		cache: cache,
 		g:     g,
 	}
-	_ = bus.Subscribe(reset, c.Reset)
-	return c
 }
 
 func (c *cached[T]) Get() (T, error) {

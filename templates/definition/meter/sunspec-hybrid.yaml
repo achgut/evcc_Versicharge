@@ -20,8 +20,6 @@ params:
       en: Verify Float/Integer setting in inverter
     advanced: true
     valuetype: bool
-  - name: capacity
-    advanced: true
 render: |
   {{- if eq .usage "grid" }}
   type: modbus
@@ -93,7 +91,4 @@ render: |
     {{- include "modbus" . | indent 2 }}
     model: sunspec
     value: ChargeState
-  {{- if ne .capacity "" }}
-  capacity: {{ .capacity }} # kWh
-  {{- end }}
   {{- end }}

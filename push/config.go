@@ -3,42 +3,48 @@ package push
 import (
 	"fmt"
 	"strings"
+
+	"github.com/evcc-io/evcc/util"
 )
 
-// Messenger implements message sending
-type Messenger interface {
+// Sender implements message sending
+type Sender interface {
 	Send(title, msg string)
 }
 
-type senderRegistry map[string]func(map[string]interface{}) (Messenger, error)
+var log = util.NewLogger("push")
 
-func (r senderRegistry) Add(name string, factory func(map[string]interface{}) (Messenger, error)) {
-	if _, exists := r[name]; exists {
-		panic(fmt.Sprintf("cannot register duplicate messenger type: %s", name))
-	}
-	r[name] = factory
-}
-
-func (r senderRegistry) Get(name string) (func(map[string]interface{}) (Messenger, error), error) {
-	factory, exists := r[name]
-	if !exists {
-		return nil, fmt.Errorf("messenger type not registered: %s", name)
-	}
-	return factory, nil
-}
-
-var registry senderRegistry = make(map[string]func(map[string]interface{}) (Messenger, error))
-
-// NewFromConfig creates messenger from configuration
-func NewFromConfig(typ string, other map[string]interface{}) (v Messenger, err error) {
-	factory, err := registry.Get(strings.ToLower(typ))
-	if err == nil {
-		if v, err = factory(other); err != nil {
-			err = fmt.Errorf("cannot create messenger '%s': %w", typ, err)
+// NewMessengerFromConfig creates a new messenger
+func NewMessengerFromConfig(typ string, other map[string]interface{}) (res Sender, err error) {
+	switch strings.ToLower(typ) {
+	case "pushover":
+		var cc pushOverConfig
+		if err = util.DecodeOther(other, &cc); err == nil {
+			res, err = NewPushOverMessenger(cc.App, cc.Recipients)
 		}
-	} else {
-		err = fmt.Errorf("invalid messenger type: %s", typ)
+	case "telegram":
+		var cc telegramConfig
+		if err = util.DecodeOther(other, &cc); err == nil {
+			res, err = NewTelegramMessenger(cc.Token, cc.Chats)
+		}
+	case "email", "shout":
+		var cc shoutrrrConfig
+		if err = util.DecodeOther(other, &cc); err == nil {
+			res, err = NewShoutrrrMessenger(cc.URI)
+		}
+	case "script":
+		var cc scriptConfig
+		if err = util.DecodeOther(other, &cc); err == nil {
+			res, err = NewScriptMessenger(cc.CmdLine, cc.Timeout, cc.Scale, cc.Cache)
+		}
+	case "ntfy":
+		var cc ntfyConfig
+		if err = util.DecodeOther(other, &cc); err == nil {
+			res, err = NewNtfyMessenger(cc.URI, cc.Priority, cc.Tags)
+		}
+	default:
+		err = fmt.Errorf("unknown messenger type: %s", typ)
 	}
 
-	return
+	return res, err
 }

@@ -155,9 +155,9 @@ export default {
 		vehicleFeatureOffline: Boolean,
 		vehicles: Array,
 		minSoc: Number,
-		planActive: Boolean,
-		planProjectedStart: String,
 		targetTime: String,
+		targetTimeActive: Boolean,
+		targetTimeProjectedStart: String,
 		vehicleProviderLoggedIn: Boolean,
 		vehicleProviderLoginPath: String,
 		vehicleProviderLogoutPath: String,
@@ -256,10 +256,10 @@ export default {
 			api.post(this.apiPath("mode") + "/" + mode);
 		},
 		setTargetSoc: function (soc) {
-			api.post(this.apiPath("target/soc") + "/" + soc);
+			api.post(this.apiPath("targetsoc") + "/" + soc);
 		},
 		setTargetEnergy: function (kWh) {
-			api.post(this.apiPath("target/energy") + "/" + kWh);
+			api.post(this.apiPath("targetenergy") + "/" + kWh);
 		},
 		setMaxCurrent: function (maxCurrent) {
 			api.post(this.apiPath("maxcurrent") + "/" + maxCurrent);
@@ -274,10 +274,10 @@ export default {
 			api.post(this.apiPath("minsoc") + "/" + soc);
 		},
 		setTargetTime: function (date) {
-			api.post(`${this.apiPath("target/time")}/${date.toISOString()}`);
+			api.post(`${this.apiPath("targetcharge")}/${this.targetSoc}/${date.toISOString()}`);
 		},
 		removeTargetTime: function () {
-			api.delete(this.apiPath("target/time"));
+			api.delete(this.apiPath("targetcharge"));
 		},
 		changeVehicle(index) {
 			api.post(this.apiPath("vehicle") + `/${index}`);

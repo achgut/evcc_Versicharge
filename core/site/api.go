@@ -34,9 +34,9 @@ type API interface {
 	GetVehicles() []api.Vehicle
 
 	//
-	// Tariffs
+	// tariffs
 	//
 
-	// GetTariff returns the respective tariff
-	GetTariff(string) api.Tariff
+	// GetTariff returns the tariffs rates
+	GetTariff(tariff string) (api.Rates, error)
 }

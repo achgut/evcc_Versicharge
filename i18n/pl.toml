@@ -41,7 +41,7 @@ savingsComparedToGrid = "w porównaniu z siecią"
 savingsTotalEnergy = "{total} kWh naładowanych"
 
 [footer.community]
-tabTitle = "Dane społeczności"
+tabTitle = "Aktualne dane społeczności"
 power = "Moc ładowania"
 powerSub1 = "{activeClients} z {totalClients} uczestników"
 powerSub2 = "ładuje się..."
@@ -170,17 +170,14 @@ inactiveLabel = "Czas docelowy"
 activeLabel = "{time}"
 modalTitle = "Ustaw docelowy czas"
 setTargetTime = "brak"
-descriptionSoc = "Kiedy pojazd powinien zostać naladowany do {targetSoc}%?"
+description = "Kiedy pojazd powinien zostać naladowany do {targetSoc}%?"
 today = "dzisiaj"
 tomorrow = "jutro"
 targetIsInThePast = "Wybierz czas w przyszłości."
 remove = "Usuń"
 activate = "Aktywować"
-descriptionEnergy = "Do kiedy należy załadować {targetEnergy} do pojazdu?"
-planUnknown = "nieznany"
-planDuration = "Czas ładowania"
-planPeriodLabel = "Okres"
-planPeriodValue = "{start} do {end}"
+experimentalLabel = "Eksperymentalna"
+experimentalText = "Ta funkcja działa, ale nie jest jeszcze doskonała. Zgłoś nieoczekiwane zachowanie do naszego"
 
 [main.targetEnergy]
 label = "Ograniczenie"
@@ -205,7 +202,6 @@ loadpoint = "Ładowarka"
 vehicle = "Pojazd"
 energy = "Naładowano"
 date = "Okres"
-reallyDelete = "Czy na pewno chcesz usunąć tę sesję?"
 
 [sessions.csv]
 loadpoint = "Ładowarka"
@@ -242,13 +238,3 @@ mi = "mile"
 
 [settings.telemetry]
 label = "Telemetria"
-
-[session]
-meterstart = "Licznik początek (kWh)"
-meterstop = "Licznik koniec (kWh)"
-odometer = "Przebieg (km)"
-finished = "Zakończony"
-delete = "Usunąć"
-cancel = "Anuluj"
-title = "Sesja ładowania"
-started = "Zaczęło się"

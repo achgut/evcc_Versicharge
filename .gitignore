@@ -17,7 +17,6 @@ evcc.exe
 evcc_*
 linux-*.Dockerfile
 builddir
-dist
 flags
 node_modules
 release
