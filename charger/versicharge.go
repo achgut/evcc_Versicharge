@@ -1,5 +1,5 @@
 package charger
-// Test development branch
+
 // LICENSE
 
 // Copyright (c) 2019-2022 andig => Vertel.go Charger used as basis
